@@ -86,6 +86,16 @@ The same 64 questions, answered by `gemini-3.5-flash-lite` and graded by an LLM 
 - The index is an in-memory NumPy matrix, which is adequate for 1,473 chunks and not for a large corpus.
 - The local 3B model follows the citation rules less reliably than the API model.
 
+## Run with Docker
+
+Requires Docker Desktop and a `.env` file containing `GEMINI_API_KEY`.
+
+```
+docker compose up --build
+```
+
+Then open `http://localhost:8000`. On first start the container downloads the papers and builds the index if `data/` and `output/` are empty. The container runs on CPU.
+
 ## Quick start
 
 Requirements: Python 3.12 and, for GPU inference, an NVIDIA card with a CUDA build of PyTorch.
@@ -161,7 +171,6 @@ python eval_answers.py --limit 64
 - Author-year reference parsing and a citation graph
 - Table extraction
 - A vector database in place of the in-memory index
-- Container image and continuous integration
 
 ## Author
 
