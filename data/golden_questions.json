@@ -1,0 +1,331 @@
+{
+  "document": "Attention Is All You Need",
+  "arxiv_id": "1706.03762",
+  "question_count": 35,
+  "questions": [
+    {
+      "id": "q001",
+      "question": "How many attention heads does the base model use?",
+      "relevant_sections": [
+        "3.2.2"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q002",
+      "question": "What is the dimension of the model embeddings?",
+      "relevant_sections": [
+        "3.1",
+        "3.4"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q003",
+      "question": "How many identical layers are in the encoder stack?",
+      "relevant_sections": [
+        "3.1"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q004",
+      "question": "What hardware was used to train the models?",
+      "relevant_sections": [
+        "5.2"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q005",
+      "question": "How long did it take to train the big model?",
+      "relevant_sections": [
+        "5.2",
+        "6.1"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q006",
+      "question": "Which optimizer was used and with what beta values?",
+      "relevant_sections": [
+        "5.3"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q007",
+      "question": "What is the inner layer dimensionality of the feed-forward network?",
+      "relevant_sections": [
+        "3.3"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q008",
+      "question": "What dropout rate is used for the base model?",
+      "relevant_sections": [
+        "5.4"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q009",
+      "question": "What BLEU score did the big model achieve on English to German?",
+      "relevant_sections": [
+        "6.1",
+        "Abstract"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q010",
+      "question": "How many warmup steps were used for the learning rate schedule?",
+      "relevant_sections": [
+        "5.3"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q011",
+      "question": "What label smoothing value was applied during training?",
+      "relevant_sections": [
+        "5.4"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q012",
+      "question": "What beam size was used during inference for translation?",
+      "relevant_sections": [
+        "6.1"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q013",
+      "question": "How large was the English to German training dataset?",
+      "relevant_sections": [
+        "5.1"
+      ],
+      "category": "factual",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q014",
+      "question": "Why are the dot products scaled before the softmax?",
+      "relevant_sections": [
+        "3.2.1"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q015",
+      "question": "Why is multi-head attention better than a single attention head?",
+      "relevant_sections": [
+        "3.2.2"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q016",
+      "question": "Why did the authors choose sinusoidal functions over learned embeddings?",
+      "relevant_sections": [
+        "3.5"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q017",
+      "question": "Why is masking applied in the decoder self-attention?",
+      "relevant_sections": [
+        "3.1",
+        "3.2.3"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q018",
+      "question": "Why does sequential computation limit parallelization in recurrent models?",
+      "relevant_sections": [
+        "1"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q019",
+      "question": "What are the three criteria used to justify self-attention?",
+      "relevant_sections": [
+        "4"
+      ],
+      "category": "reasoning",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q020",
+      "question": "Why might self-attention produce more interpretable models?",
+      "relevant_sections": [
+        "4"
+      ],
+      "category": "reasoning",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q021",
+      "question": "How does the model know the order of words in a sentence?",
+      "relevant_sections": [
+        "3.5"
+      ],
+      "category": "paraphrase",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q022",
+      "question": "What makes this architecture faster to train than older sequence models?",
+      "relevant_sections": [
+        "1",
+        "4"
+      ],
+      "category": "paraphrase",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q023",
+      "question": "How does the network avoid forgetting information from earlier layers?",
+      "relevant_sections": [
+        "3.1"
+      ],
+      "category": "paraphrase",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q024",
+      "question": "What stops the decoder from cheating by looking at future tokens?",
+      "relevant_sections": [
+        "3.1",
+        "3.2.3"
+      ],
+      "category": "paraphrase",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q025",
+      "question": "How do the authors prevent the model from memorising the training data?",
+      "relevant_sections": [
+        "5.4"
+      ],
+      "category": "paraphrase",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q026",
+      "question": "What techniques let the model relate distant words in a sentence?",
+      "relevant_sections": [
+        "2",
+        "4"
+      ],
+      "category": "paraphrase",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q027",
+      "question": "How is attention computed as a weighted sum?",
+      "relevant_sections": [
+        "3.2",
+        "3.2.1"
+      ],
+      "category": "conceptual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q028",
+      "question": "What are the three different ways attention is used in the model?",
+      "relevant_sections": [
+        "3.2.3"
+      ],
+      "category": "conceptual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q029",
+      "question": "How is the encoder different from the decoder?",
+      "relevant_sections": [
+        "3.1"
+      ],
+      "category": "conceptual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q030",
+      "question": "What is the overall structure of the Transformer?",
+      "relevant_sections": [
+        "3",
+        "3.1"
+      ],
+      "category": "conceptual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q031",
+      "question": "How does the complexity of self-attention compare to a recurrent layer?",
+      "relevant_sections": [
+        "4"
+      ],
+      "category": "comparison",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q032",
+      "question": "How does additive attention differ from dot-product attention?",
+      "relevant_sections": [
+        "3.2.1"
+      ],
+      "category": "comparison",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q033",
+      "question": "How did the Transformer perform on constituency parsing?",
+      "relevant_sections": [
+        "6.3"
+      ],
+      "category": "factual",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q034",
+      "question": "What happens to quality when the number of heads is too large?",
+      "relevant_sections": [
+        "6.2"
+      ],
+      "category": "reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q035",
+      "question": "What future directions do the authors propose?",
+      "relevant_sections": [
+        "7"
+      ],
+      "category": "conceptual",
+      "difficulty": "easy"
+    }
+  ]
+}

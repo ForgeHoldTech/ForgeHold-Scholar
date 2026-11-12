@@ -1,0 +1,10 @@
+pymupdf
+rich
+numpy
+torch
+sentence-transformers
+rank-bm25
+requests
+python-dotenv
+fastapi
+uvicorn

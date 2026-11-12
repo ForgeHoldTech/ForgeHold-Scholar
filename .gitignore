@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.env
+data/papers/
+data/*.pdf
+output/*
+!output/evaluation_report.json
+!output/corpus_evaluation_report.json
+!output/answer_evaluation.json
+!output/ingest_report.json

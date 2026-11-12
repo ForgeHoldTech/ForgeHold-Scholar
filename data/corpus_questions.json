@@ -1,0 +1,582 @@
+{
+  "question_count": 64,
+  "generation": "synthetic, one question per sampled chunk",
+  "questions": [
+    {
+      "id": "c001",
+      "question": "What was the perplexity of the Recurrent NN-1024 combined with MaxEnt 9-gram model on the One Billion Word Benchmark test set?",
+      "reference_answer": "The Recurrent NN-1024 combined with MaxEnt 9-gram model achieved a perplexity of 51.3 on the One Billion Word Benchmark test set.",
+      "paper_id": "1312.3005",
+      "paper_title": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+      "chunk_id": "1312.3005-0005",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c002",
+      "question": "What model achieved the best results among the evaluated approaches in the One Billion Word Benchmark study?",
+      "reference_answer": "The best results were achieved using a recurrent neural network based language model.",
+      "paper_id": "1312.3005",
+      "paper_title": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+      "chunk_id": "1312.3005-0001",
+      "section": "Abstract"
+    },
+    {
+      "id": "c003",
+      "question": "What specific value of dropout rate was used for the base Transformer model during training?",
+      "reference_answer": "For the base Transformer model, a dropout rate of Pdrop = 0.1 was utilized.",
+      "paper_id": "1706.03762",
+      "paper_title": "Attention Is All You Need",
+      "chunk_id": "1706.03762-0030",
+      "section": "5.4 Regularization"
+    },
+    {
+      "id": "c004",
+      "question": "What two sub-layers make up each layer of the Transformer encoder in Attention Is All You Need?",
+      "reference_answer": "Each layer of the encoder consists of a multi-head self-attention mechanism followed by a position-wise fully connected feed-forward network.",
+      "paper_id": "1706.03762",
+      "paper_title": "Attention Is All You Need",
+      "chunk_id": "1706.03762-0009",
+      "section": "3.1 Encoder and Decoder Stacks"
+    },
+    {
+      "id": "c005",
+      "question": "How are the final answer predictions and training loss determined in the Attention on Attention VQA architecture?",
+      "reference_answer": "The model uses a two-layer classification module with a sigmoid layer to output probabilities for each possible answer, selecting the word with the highest probability as the prediction. During training, these output probabilities can be passed to a binary cross-entropy loss layer.",
+      "paper_id": "1803.07724",
+      "paper_title": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+      "chunk_id": "1803.07724-0011",
+      "section": "4 Methodology"
+    },
+    {
+      "id": "c006",
+      "question": "What improvements did the Attention on Attention architecture introduce to advance Visual Question Answering tasks?",
+      "reference_answer": "The research improved performance by refining image features, developing novel attention mechanisms, and incorporating a straightforward classifier. These enhancements allowed the approach to exceed previous state-of-the-art results.",
+      "paper_id": "1803.07724",
+      "paper_title": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+      "chunk_id": "1803.07724-0020",
+      "section": "7 Limitations, Future Work, and Conclusion"
+    },
+    {
+      "id": "c007",
+      "question": "How are the forward and reverse recurrent networks used to create annotation vectors in a bidirectional encoder for neural machine translation?",
+      "reference_answer": "The forward network reads the word embedding sequence from left to right while the reverse network reads it right to left. At each time step, the hidden states from both networks are concatenated to form the final annotation vector.",
+      "paper_id": "1803.11407",
+      "paper_title": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+      "chunk_id": "1803.11407-0006",
+      "section": "2 Background: Attention-based Neural Machine Translation"
+    },
+    {
+      "id": "c008",
+      "question": "What is the primary advantage of the fine-grained attention mechanism in neural machine translation according to the experimental results?",
+      "reference_answer": "The fine-grained attention mechanism improves translation quality by up to +1.4 BLEU. It achieves this by exploiting the internal structure of each context vector to focus on different interpretations of a single word.",
+      "paper_id": "1803.11407",
+      "paper_title": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+      "chunk_id": "1803.11407-0004",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c009",
+      "question": "How does increasing the model size impact fine-tuning task accuracy in BERT?",
+      "reference_answer": "Larger BERT models result in strict accuracy improvements across all four evaluated datasets, including the MRPC dataset which contains only 3,600 labeled training examples.",
+      "paper_id": "1810.04805",
+      "paper_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "chunk_id": "1810.04805-0043",
+      "section": "5.2 Effect of Model Size"
+    },
+    {
+      "id": "c010",
+      "question": "What is the name of the first fine-tuning based representation model to achieve state-of-the-art results across a large suite of sentence-level and token-level tasks?",
+      "reference_answer": "BERT is the first fine-tuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks. It also advances the state of the art for eleven natural language processing tasks.",
+      "paper_id": "1810.04805",
+      "paper_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "chunk_id": "1810.04805-0006",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c011",
+      "question": "How does the accuracy change when introducing sparsity to the Sparse Mixture of Experts model for Visual Question Answering, according to the experimental results?",
+      "reference_answer": "The results demonstrate that there is a very minimal loss in accuracy when moving from 0% sparsity.",
+      "paper_id": "1909.09192",
+      "paper_title": "Learning Sparse Mixture of Experts for Visual Question Answering",
+      "chunk_id": "1909.09192-0007",
+      "section": "Abstract"
+    },
+    {
+      "id": "c012",
+      "question": "How does a sparsely activated convolutional neural network compare in performance to a standard convolutional neural network within a Visual Question Answering architecture?",
+      "reference_answer": "A sparsely activated convolutional neural network based Visual Question Answering model achieves comparable performance to a standard architecture. This approach provides an efficient and modular design while maintaining performance levels.",
+      "paper_id": "1909.09192",
+      "paper_title": "Learning Sparse Mixture of Experts for Visual Question Answering",
+      "chunk_id": "1909.09192-0001",
+      "section": "Abstract"
+    },
+    {
+      "id": "c013",
+      "question": "What core component allows sequence-to-sequence models to connect source sequences and target words for abstractive sentence summarization?",
+      "reference_answer": "The attention mechanism is a central component in modern sequence-to-sequence models that builds connections between source sequences and target words to help generate target words based on the most relevant parts of the source.",
+      "paper_id": "1910.13114",
+      "paper_title": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+      "chunk_id": "1910.13114-0002",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c014",
+      "question": "What neural network architecture serves as the foundation for the contrastive attention mechanism in abstractive sentence summarization?",
+      "reference_answer": "The system utilizes the Transformer architecture as its basis, incorporating both a conventional attention component and a derived opponent attention component stacked with additional layers.",
+      "paper_id": "1910.13114",
+      "paper_title": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+      "chunk_id": "1910.13114-0011",
+      "section": "3 Approach"
+    },
+    {
+      "id": "c015",
+      "question": "What proportion of comments in the CQA-QL corpus are classified as Good?",
+      "reference_answer": "Roughly half of the comments in the corpus are categorized as Good, while another 10% are considered Potential and the remaining portion consists of Bad comments.",
+      "paper_id": "1911.11403",
+      "paper_title": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+      "chunk_id": "1911.11403-0016",
+      "section": "3.2 Annotating the CQA-QL corpus"
+    },
+    {
+      "id": "c016",
+      "question": "What are the data statistics and breakdown for the CQA-QL corpus English dataset splits?",
+      "reference_answer": "The CQA-QL corpus English dataset includes training, development, and test splits containing specified quantities of questions, comments, and various annotation values such as Good, Potential, and Bad labels.",
+      "paper_id": "1911.11403",
+      "paper_title": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+      "chunk_id": "1911.11403-0017",
+      "section": "3.2 Annotating the CQA-QL corpus"
+    },
+    {
+      "id": "c017",
+      "question": "What architecture and dataset were used to train the back-translation model for generating query and context paraphrases?",
+      "reference_answer": "An 8-layer seq2seq model with attention was trained on the WMT16 News English-German task using an open-sourced TensorFlow NMT codebase.",
+      "paper_id": "1912.02145",
+      "paper_title": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+      "chunk_id": "1912.02145-0018",
+      "section": "3.4 Paraphrasing by Back-Translation"
+    },
+    {
+      "id": "c018",
+      "question": "How are back-translation paraphrases of queries and contexts incorporated into the training data in \"An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering\"?",
+      "reference_answer": "The system generates query and context paraphrases using a back-translation model and adds them to the training set based on independent probability thresholds for each component.",
+      "paper_id": "1912.02145",
+      "paper_title": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+      "chunk_id": "1912.02145-0021",
+      "section": "3.4.1 Augmentation Strategy"
+    },
+    {
+      "id": "c019",
+      "question": "What is the primary objective in the Community Question Answering subtask A from SemEval-2016 Task 3?",
+      "reference_answer": "The objective is to rank forum comments based on their appropriateness to a given question, ensuring all helpful responses are positioned above unhelpful ones despite the presence of noisy discussions.",
+      "paper_id": "1912.02998",
+      "paper_title": "Machine Translation Evaluation Meets Community Question Answering",
+      "chunk_id": "1912.02998-0002",
+      "section": "1 Introduction and Motivation"
+    },
+    {
+      "id": "c020",
+      "question": "How much do the domain-specific QL VECTORS contribute to the MAP score in the Machine Translation Evaluation Meets Community Question Answering study?",
+      "reference_answer": "QL VECTORS contribute over 2 MAP points to the performance.",
+      "paper_id": "1912.02998",
+      "paper_title": "Machine Translation Evaluation Meets Community Question Answering",
+      "chunk_id": "1912.02998-0022",
+      "section": "5.1 Results"
+    },
+    {
+      "id": "c021",
+      "question": "How are the query, key, and value representations computed from the input state in the self-attention mechanism of Déjà vu?",
+      "reference_answer": "In the self-attention mechanism, the input state matrix is projected into query, key, and value representations using learnable parameter matrices specific to each attention head. These representations are then processed using a scaled dot-product function with a scaling factor to produce the attention output.",
+      "paper_id": "2002.00741",
+      "paper_title": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+      "chunk_id": "2002.00741-0031",
+      "section": "3.2 Three Stage Weighing Pipeline"
+    },
+    {
+      "id": "c022",
+      "question": "How does replacing the M alpha component with a flat attention module affect the performance of the Déjà vu model?",
+      "reference_answer": "The performance remains nearly identical on the XING dataset while experiencing a slight decrease on the UserBehavior dataset. This indicates that content-based importance scores are particularly useful for sequential popularity-driven patterns rather than tasks dominated by first-order transition patterns.",
+      "paper_id": "2002.00741",
+      "paper_title": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+      "chunk_id": "2002.00741-0064",
+      "section": "4.4.2 Discussion on Model Architecture. To further analyze the"
+    },
+    {
+      "id": "c023",
+      "question": "What is the difference between Thorough Decoding and Fast Decoding in the RAG-Sequence model?",
+      "reference_answer": "Thorough Decoding calculates probabilities for all hypotheses by running extra forward passes for documents where a hypothesis is missing from the beam, whereas Fast Decoding approximates these missing probabilities as zero to avoid extra forward passes.",
+      "paper_id": "2005.11401",
+      "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "chunk_id": "2005.11401-0016",
+      "section": "2.5 Decoding"
+    },
+    {
+      "id": "c024",
+      "question": "How close is the classification accuracy of RAG compared to the RoBERTa model trained by Thorne and Vlachos for two-way classification?",
+      "reference_answer": "RAG achieves an accuracy within 2.7% of the RoBERTa model trained by Thorne and Vlachos, despite only receiving the claim and retrieving its own evidence.",
+      "paper_id": "2005.11401",
+      "paper_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "chunk_id": "2005.11401-0032",
+      "section": "4.4 Fact Veriﬁcation"
+    },
+    {
+      "id": "c025",
+      "question": "What machine translation datasets are used to evaluate the attention mechanism with energy-friendly operations?",
+      "reference_answer": "The approach is evaluated using IWSLT’15 English-Vietnamese, WMT’14 English-German, and WMT’17 Chinese-English datasets.",
+      "paper_id": "2204.13353",
+      "paper_title": "Attention Mechanism with Energy-Friendly Operations",
+      "chunk_id": "2204.13353-0013",
+      "section": "4.1 Dataset Preprocessing"
+    },
+    {
+      "id": "c026",
+      "question": "What energy and accuracy results did the E-Att attention model achieve on machine translation tasks compared to the vanilla attention mechanism?",
+      "reference_answer": "The proposed E-Att model achieves competitive accuracy while saving 99% of the energy during alignment calculation and 66% across the entire attention procedure on three machine translation tasks.",
+      "paper_id": "2204.13353",
+      "paper_title": "Attention Mechanism with Energy-Friendly Operations",
+      "chunk_id": "2204.13353-0001",
+      "section": "Abstract"
+    },
+    {
+      "id": "c027",
+      "question": "How are the parameter matrices for queries, keys, and values represented in a specific attention head within the Transformer multi-head self-attention sub-layer?",
+      "reference_answer": "In a particular attention head, the parameter matrices for query, key, and value are denoted using tensor notation as aWQ, aWK, and aWV, respectively, with a superscript 'a' representing the specific head among the 'h' multi-heads.",
+      "paper_id": "2208.10247",
+      "paper_title": "Generalized Attention Mechanism and Relative Position for Transformer",
+      "chunk_id": "2208.10247-0004",
+      "section": "2 Self-Attention Mechanism of Vaswani et al. [5, 4]"
+    },
+    {
+      "id": "c028",
+      "question": "How is the linear combination of the relative position contributions defined in the Generalized Attention Mechanism?",
+      "reference_answer": "The total output is computed as a linear combination of the standard output and the relative position contribution using a scalar parameter between zero and one.",
+      "paper_id": "2208.10247",
+      "paper_title": "Generalized Attention Mechanism and Relative Position for Transformer",
+      "chunk_id": "2208.10247-0009",
+      "section": "4 Relative Position in GAM"
+    },
+    {
+      "id": "c029",
+      "question": "How does WizardLM generate an evolved instruction dataset through multiple iterations?",
+      "reference_answer": "WizardLM starts with an initial instruction dataset and upgrades the instructions in each iteration by prompting a large language model with an Evol-Instruct prompt. It then uses the model to generate corresponding responses for the newly evolved instructions, repeating this process for a set number of evolutions to obtain sequential datasets.",
+      "paper_id": "2304.12244",
+      "paper_title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "chunk_id": "2304.12244-0015",
+      "section": "3.1 DEFINITION OF INSTRUCTION DATA EVOLUTION"
+    },
+    {
+      "id": "c030",
+      "question": "What are the primary contributions and findings regarding the Evol-Instruct method and the WizardLM model?",
+      "reference_answer": "The authors introduce Evol-Instruct to automatically generate open-domain instructions across various difficulty levels and develop the WizardLM model, which surpasses open-source alternatives like Alpaca and Vicuna on multiple benchmarks. Additionally, the study highlights the critical role that instruction complexity plays in achieving superior performance during supervised fine-tuning.",
+      "paper_id": "2304.12244",
+      "paper_title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "chunk_id": "2304.12244-0010",
+      "section": "1 INTRODUCTION"
+    },
+    {
+      "id": "c031",
+      "question": "What two techniques are used by the Tied-Atomic model to improve upon DSI generative retrieval?",
+      "reference_answer": "The Tied-Atomic model enhances DSI generative retrieval by tying document texts to vocabulary embeddings and utilizing a contrastive loss function during training.",
+      "paper_id": "2306.11397",
+      "paper_title": "Generative Retrieval as Dense Retrieval",
+      "chunk_id": "2306.11397-0006",
+      "section": "1 INTRODUCTION"
+    },
+    {
+      "id": "c032",
+      "question": "How does generative retrieval using Atomic DocIDs mathematically compare to dense retrieval?",
+      "reference_answer": "Generative retrieval with Atomic DocIDs functions similarly to dense retrieval because the similarity score is calculated as a dot product between two independent vectors. Consequently, this generative approach shares the same level of expressiveness as a bi-encoder dense retrieval model.",
+      "paper_id": "2306.11397",
+      "paper_title": "Generative Retrieval as Dense Retrieval",
+      "chunk_id": "2306.11397-0013",
+      "section": "3.1 Atomic DocIDs"
+    },
+    {
+      "id": "c033",
+      "question": "How do varying the parameters of Adaptive LADR impact RBO and latency compared to Proactive LADR?",
+      "reference_answer": "Adaptive LADR can achieve 0.98 RBO at a latency of 27.7ms/q when using both large parameter values, whereas Proactive LADR only reaches 0.92 RBO while costing 69.8ms/q.",
+      "paper_id": "2307.16779",
+      "paper_title": "Lexically-Accelerated Dense Retrieval",
+      "chunk_id": "2307.16779-0059",
+      "section": "5.3 RQ3 and RQ4: Overhead and Parameters"
+    },
+    {
+      "id": "c034",
+      "question": "How does Adaptive LADR improve upon the basic neighborhood selection approach used in Proactive LADR?",
+      "reference_answer": "Adaptive LADR improves efficiency by selectively scoring neighbors based on the top-scoring documents identified so far, repeating the process until no new documents enter the top results.",
+      "paper_id": "2307.16779",
+      "paper_title": "Lexically-Accelerated Dense Retrieval",
+      "chunk_id": "2307.16779-0026",
+      "section": "3 LADR"
+    },
+    {
+      "id": "c035",
+      "question": "How does PB-LLM handle salient weights to achieve extreme low-bit quantization?",
+      "reference_answer": "PB-LLM utilizes a partially binarized matrix to store salient weights in higher bits. This approach ensures that salient weights are fully exploited to maintain the language reasoning capacity of the quantized large language models.",
+      "paper_id": "2310.00034",
+      "paper_title": "PB-LLM: Partially Binarized Large Language Models",
+      "chunk_id": "2310.00034-0008",
+      "section": "3 Partially   Binarize"
+    },
+    {
+      "id": "c036",
+      "question": "What is the core concept of the PB-LLM approach regarding model weights?",
+      "reference_answer": "PB-LLM keeps a small subset of the model's weights frozen at a higher bit precision while binarizing the remaining weights using an optimal scaling factor strategy.",
+      "paper_id": "2310.00034",
+      "paper_title": "PB-LLM: Partially Binarized Large Language Models",
+      "chunk_id": "2310.00034-0007",
+      "section": "3 Partially   Binarize"
+    },
+    {
+      "id": "c037",
+      "question": "What zero-shot evaluation scores did the LLaMA-2-7B model achieve across various NLP and code generation benchmarks when fine-tuned with different data configurations?",
+      "reference_answer": "In a zero-shot setting, the LLaMA-2-7B model with no fine-tuning achieved 43.1 on ARC (challenge), 69.5 on Winogrande, 78.0 on PIQA, 40.8 on MMLU, 39.2 on Race, 57.2 on HellaSwag, and HumanEval scores of 13.7 (@1) and 21.3 (@10), resulting in an average of 54.6. When fine-tuned using specific data configurations like A, C, P, and their combinations, its benchmark performance varied across tasks, such as reaching an average of 58.2 under configuration P.",
+      "paper_id": "2312.10793",
+      "paper_title": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+      "chunk_id": "2312.10793-0009",
+      "section": "3 Experimental Setup"
+    },
+    {
+      "id": "c038",
+      "question": "How do different types of instruction datasets impact the capabilities of large language models?",
+      "reference_answer": "Chat-like instructions enhance performance for conversational assistants, traditional natural language processing instructions improve benchmark scores, and coding instructions boost software generation abilities.",
+      "paper_id": "2312.10793",
+      "paper_title": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+      "chunk_id": "2312.10793-0002",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c039",
+      "question": "How does varying the amount of negative data affect math task performance when fine-tuning large language models as agents?",
+      "reference_answer": "Math task performance improves as the volume of negative data increases, eventually leveling off once the negative sample size reaches approximately 11k for both 2k and 5k positive sample baselines.",
+      "paper_id": "2402.11651",
+      "paper_title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+      "chunk_id": "2402.11651-0026",
+      "section": "5.1 Impact of Training Sample Quantity"
+    },
+    {
+      "id": "c040",
+      "question": "What baseline settings are used to evaluate NAT in the study on integrating negative examples for LLM agents?",
+      "reference_answer": "The study compares NAT against two baselines: the Vanilla setting, which fine-tunes LLMs using only positive examples, and Negative-Unaware Training (NUT), which incorporates negative examples without any additional prefixes or suffixes.",
+      "paper_id": "2402.11651",
+      "paper_title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+      "chunk_id": "2402.11651-0020",
+      "section": "4.1 Experimental Setup"
+    },
+    {
+      "id": "c041",
+      "question": "Which publication venue featured the 2018 study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin?",
+      "reference_answer": "The study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin was published in the Journal of Data and Information Quality (JDIQ) in 2018.",
+      "paper_id": "2403.08970",
+      "paper_title": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+      "chunk_id": "2403.08970-0062",
+      "section": "Conclusion"
+    },
+    {
+      "id": "c042",
+      "question": "Why do dense retrieval models struggle when applied to out-of-distribution datasets compared to traditional systems like BM25?",
+      "reference_answer": "Dense retrieval models trained on a source domain generalize less effectively to out-of-distribution data than traditional and interaction-based models. Furthermore, obtaining gold labels for target datasets requires costly human annotations.",
+      "paper_id": "2403.08970",
+      "paper_title": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+      "chunk_id": "2403.08970-0003",
+      "section": "Introduction"
+    },
+    {
+      "id": "c043",
+      "question": "What are some limitations regarding architecture and evaluation scope in the study of scaling laws for dense retrieval?",
+      "reference_answer": "The research focuses exclusively on a single dense vector architecture of fixed dimensionality and is limited to in-domain datasets due to small and unstable out-of-domain data. Additionally, resource constraints limited the maximum size of the models and the extent of the data used.",
+      "paper_id": "2403.18684",
+      "paper_title": "Scaling Laws For Dense Retrieval",
+      "chunk_id": "2403.18684-0055",
+      "section": "6 LIMITATION AND FUTURE WORK"
+    },
+    {
+      "id": "c044",
+      "question": "Why is an irreducible loss term included in the model size scaling laws for dense retrieval?",
+      "reference_answer": "An irreducible loss term is necessary because incomplete annotations and the subjective nature of relevance among different human annotators make it impossible for models to achieve zero loss.",
+      "paper_id": "2403.18684",
+      "paper_title": "Scaling Laws For Dense Retrieval",
+      "chunk_id": "2403.18684-0037",
+      "section": "4.1 Model Size Scaling"
+    },
+    {
+      "id": "c045",
+      "question": "What function does the clipping mechanism serve in the Proximal Policy Optimization objective for large language models?",
+      "reference_answer": "The clipping function ensures that policy updates stay within a small, stable region known as the trust region. This prevents large deviations that could destabilize the learning process.",
+      "paper_id": "2407.12036",
+      "paper_title": "Exploring Advanced Large Language Models with LLMsuite",
+      "chunk_id": "2407.12036-0079",
+      "section": "6.1 Proximal Policy Optimization for Large Language Models"
+    },
+    {
+      "id": "c046",
+      "question": "What are the primary benefits of implementing the Retrieval-Augmented Generation framework in generative AI models?",
+      "reference_answer": "The Retrieval-Augmented Generation framework updates the model's knowledge and mitigates hallucinations by grounding responses in external data. Additionally, it enhances the overall accuracy and reliability of generative AI models.",
+      "paper_id": "2407.12036",
+      "paper_title": "Exploring Advanced Large Language Models with LLMsuite",
+      "chunk_id": "2407.12036-0018",
+      "section": "2.1 Retrieval-Augmented Generation (RAG) Framework"
+    },
+    {
+      "id": "c047",
+      "question": "What empirical evaluations were performed to assess the performance and properties of daGPAM?",
+      "reference_answer": "To evaluate daGPAM, the researchers conducted rank-collapse analyses at initialization and post-training, monitored the gradient norm history of the query weights during training, and compared daGPAM against alternative attention mechanisms.",
+      "paper_id": "2410.15578",
+      "paper_title": "Generalized Probabilistic Attention Mechanism in Transformers",
+      "chunk_id": "2410.15578-0029",
+      "section": "5 EMPIRICAL VALIDATIONS"
+    },
+    {
+      "id": "c048",
+      "question": "What limitations are associated with previous strategies that attempt to resolve the rank-collapse issue in Transformer models?",
+      "reference_answer": "Previous methods that address rank-collapse by either amplifying shortcut coefficients or regularizing attention matrices can reduce the ability of the attention layer to capture meaningful contextual information.",
+      "paper_id": "2410.15578",
+      "paper_title": "Generalized Probabilistic Attention Mechanism in Transformers",
+      "chunk_id": "2410.15578-0006",
+      "section": "1 INTRODUCTION"
+    },
+    {
+      "id": "c049",
+      "question": "What are the trade-offs associated with forcing a Retrieval-Augmented Generation system to answer questions accurately without relying on retrieved documents as a defense against membership inference attacks?",
+      "reference_answer": "Compelling the generator to answer correctly without utilizing the retrieved context reduces system utility and performance. Furthermore, it defeats the fundamental purpose of relying on a Retrieval-Augmented Generation architecture.",
+      "paper_id": "2502.00306",
+      "paper_title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+      "chunk_id": "2502.00306-0078",
+      "section": "Discussion"
+    },
+    {
+      "id": "c050",
+      "question": "How does the membership inference attack in RAG systems determine whether a target document is included in the knowledge base?",
+      "reference_answer": "The adversary submits specific queries to the RAG system and compares the resulting output responses against ground truth answers obtained from a shadow language model. A final membership score is then computed by aggregating the correctness of these yes/no responses.",
+      "paper_id": "2502.00306",
+      "paper_title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+      "chunk_id": "2502.00306-0041",
+      "section": "5.3 Membership Inference"
+    },
+    {
+      "id": "c051",
+      "question": "How does the single-step GFM-RAG model score on the HotpotQA dataset for R@2 and R@5?",
+      "reference_answer": "In the HotpotQA evaluation, GFM-RAG achieves scores of 78.3 for R@2 and 87.1 for R@5.",
+      "paper_id": "2502.01113",
+      "paper_title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+      "chunk_id": "2502.01113-0035",
+      "section": "4.3 Question Answering Performance"
+    },
+    {
+      "id": "c052",
+      "question": "How is the knowledge graph index constructed in GFM-RAG?",
+      "reference_answer": "The KG-index is built by extracting entities, relations, and triples from documents using a language model, and then creating an entity-to-document inverted index. Additionally, entity resolution is performed using a dense embedding model to connect semantically similar entities with extra edges.",
+      "paper_id": "2502.01113",
+      "paper_title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+      "chunk_id": "2502.01113-0018",
+      "section": "3.1 KG-index Construction"
+    },
+    {
+      "id": "c053",
+      "question": "What is GRITHopper-7B and what motivated its development?",
+      "reference_answer": "GRITHopper-7B is the first decoder-based end-to-end multi-hop dense retrieval model trained on a massive scale of datasets for question-answering and fact-checking. It was developed to overcome the computational overhead, scalability issues, and generalization limitations found in previous multi-hop retrieval frameworks.",
+      "paper_id": "2503.07519",
+      "paper_title": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+      "chunk_id": "2503.07519-0007",
+      "section": "2 UKPLab/EACL2026-GritHopper"
+    },
+    {
+      "id": "c054",
+      "question": "What are the primary performance drawbacks associated with the Multi-Hop Dense Retrieval framework?",
+      "reference_answer": "Multi-Hop Dense Retrieval struggles on complex benchmarks such as MuSiQue, fails to handle tasks requiring more than two hops, and demonstrates poor performance on out-of-domain data.",
+      "paper_id": "2503.07519",
+      "paper_title": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+      "chunk_id": "2503.07519-0005",
+      "section": "2 UKPLab/EACL2026-GritHopper"
+    },
+    {
+      "id": "c055",
+      "question": "How did large and medium open-source large language models perform regarding answer faithfulness in Quranic studies?",
+      "reference_answer": "Large models dominated the answer faithfulness metric, with Llama3.2:3b achieving the top score of 4.619 and other large models like Llama3:70b and Gemma2:27b following closely. Meanwhile, medium models showed reliable performance by balancing faithfulness and efficiency, though they struggled with queries requiring deep contextual reasoning.",
+      "paper_id": "2503.16581",
+      "paper_title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+      "chunk_id": "2503.16581-0046",
+      "section": "INTRODUCTION"
+    },
+    {
+      "id": "c056",
+      "question": "How is the precision at k metric calculated for evaluating retrieval relevance in Quranic studies?",
+      "reference_answer": "The relevance score is determined using the precision@k metric by dividing the count of relevant results found within the top-k responses by k.",
+      "paper_id": "2503.16581",
+      "paper_title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+      "chunk_id": "2503.16581-0018",
+      "section": "INTRODUCTION"
+    },
+    {
+      "id": "c057",
+      "question": "What key components are consistently included in the prompts used by the FAIR-RAG framework to guide model behavior?",
+      "reference_answer": "The prompts used in the FAIR-RAG framework consistently include role and context definition, task specification, guided reasoning scaffolding, behavioral constraints, and strict output formatting. These components ensure that the agents perform reliably, maintaining the stability and overall performance of the system.",
+      "paper_id": "2510.22344",
+      "paper_title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+      "chunk_id": "2510.22344-0040",
+      "section": "3.5 Dynamic Resource Allocation and Prompt"
+    },
+    {
+      "id": "c058",
+      "question": "What F1-score did FAIR-RAG achieve on the HotpotQA benchmark?",
+      "reference_answer": "FAIR-RAG achieved an F1-score of 0.453 on the HotpotQA benchmark, surpassing the strongest iterative baseline by 8.3 points.",
+      "paper_id": "2510.22344",
+      "paper_title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+      "chunk_id": "2510.22344-0011",
+      "section": "1 Introduction"
+    },
+    {
+      "id": "c059",
+      "question": "How is the evaluation split constructed in the domain-adaptive dense retrieval work for content-based recommendation to prevent data leakage and test semantic generalization?",
+      "reference_answer": "The researchers use a stratified interaction split consisting of a 95% training set for contrastive fine-tuning and a held-out 5% test set, ensuring no user interaction pair appears in both. Additionally, the test benchmark uses user reviews as queries and product titles as retrieval targets to test semantic generalization over lexical overlap.",
+      "paper_id": "2602.00899",
+      "paper_title": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+      "chunk_id": "2602.00899-0021",
+      "section": "3.2 Dataset Curation"
+    },
+    {
+      "id": "c060",
+      "question": "What are the primary limitations of traditional sparse retrieval methods like Okapi BM25 in information retrieval?",
+      "reference_answer": "Sparse methods rely on exact keyword matching using bag-of-words representations, which makes them computationally efficient but causes them to suffer from the vocabulary mismatch problem when synonyms or conceptual descriptions are used instead.",
+      "paper_id": "2602.00899",
+      "paper_title": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+      "chunk_id": "2602.00899-0009",
+      "section": "2.2 Sparse vs. Dense Retrieval"
+    },
+    {
+      "id": "c061",
+      "question": "Did cluster-based semantic chunking consistently improve retrieval-augmented generation performance on academic texts?",
+      "reference_answer": "Across all configurations in this setup, cluster-based semantic chunking did not yield any consistent improvement and added computing complexity. Simpler chunking strategies were found to be overall more reliable, though the best choice depended on the provided document.",
+      "paper_id": "2607.01852",
+      "paper_title": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+      "chunk_id": "2607.01852-0015",
+      "section": "Discussion"
+    },
+    {
+      "id": "c062",
+      "question": "What future improvements are suggested for evaluating chunking strategies in academic text retrieval-augmented generation?",
+      "reference_answer": "Future work includes testing larger embedding models and applying different clustering algorithms for semantic chunking. Additionally, researchers plan to transition to ID-based context recall and validate RAGAs metrics against human-annotated relevance.",
+      "paper_id": "2607.01852",
+      "paper_title": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+      "chunk_id": "2607.01852-0016",
+      "section": "Discussion"
+    },
+    {
+      "id": "c063",
+      "question": "What caused the difference in expected scores between Temporal questions and Default NP questions in the QA engine diagnostic evaluation?",
+      "reference_answer": "Temporal questions achieved higher expected scores because sentences typically contained only a single date expression. In contrast, Default NP questions received lower scores because sentences averaged four noun phrases, increasing the difficulty of selecting the correct candidate.",
+      "paper_id": "cs/0107006",
+      "paper_title": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+      "chunk_id": "cs_0107006-0032",
+      "section": "6 Analyzing the effect of multiple"
+    },
+    {
+      "id": "c064",
+      "question": "What percentage of questions are found to be literally impossible to solve using only term weighting due to correct sentences being absent from the MaxOsets in the TREC data analysis?",
+      "reference_answer": "Based on the analysis of maximal overlap sets, 21% of the questions are literally impossible to get right using only term weighting because none of the correct sentences appear in the MaxOsets.",
+      "paper_id": "cs/0107006",
+      "paper_title": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+      "chunk_id": "cs_0107006-0025",
+      "section": "5 Bounds on scoring functions that use"
+    }
+  ]
+}

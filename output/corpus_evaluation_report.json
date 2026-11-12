@@ -1,0 +1,2363 @@
+{
+  "question_count": 64,
+  "document_count": 33,
+  "chunk_count": 1473,
+  "eval_depth": 10,
+  "candidate_pool": 40,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "results": [
+    {
+      "configuration": "bm25",
+      "chunk_recall_at_1": 0.4219,
+      "chunk_recall_at_5": 0.7812,
+      "chunk_recall_at_10": 0.875,
+      "chunk_mrr": 0.5841,
+      "paper_recall_at_1": 0.9219,
+      "paper_recall_at_5": 0.9844,
+      "seconds": 0.4,
+      "outcomes": [
+        {
+          "question_id": "c001",
+          "question": "What was the perplexity of the Recurrent NN-1024 combined with MaxEnt 9-gram model on the One Billion Word Benchmark test set?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0005",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c002",
+          "question": "What model achieved the best results among the evaluated approaches in the One Billion Word Benchmark study?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0001",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c003",
+          "question": "What specific value of dropout rate was used for the base Transformer model during training?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0030",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c004",
+          "question": "What two sub-layers make up each layer of the Transformer encoder in Attention Is All You Need?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c005",
+          "question": "How are the final answer predictions and training loss determined in the Attention on Attention VQA architecture?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0011",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c006",
+          "question": "What improvements did the Attention on Attention architecture introduce to advance Visual Question Answering tasks?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0020",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c007",
+          "question": "How are the forward and reverse recurrent networks used to create annotation vectors in a bidirectional encoder for neural machine translation?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c008",
+          "question": "What is the primary advantage of the fine-grained attention mechanism in neural machine translation according to the experimental results?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0004",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c009",
+          "question": "How does increasing the model size impact fine-tuning task accuracy in BERT?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0043",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c010",
+          "question": "What is the name of the first fine-tuning based representation model to achieve state-of-the-art results across a large suite of sentence-level and token-level tasks?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c011",
+          "question": "How does the accuracy change when introducing sparsity to the Sparse Mixture of Experts model for Visual Question Answering, according to the experimental results?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0007",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c012",
+          "question": "How does a sparsely activated convolutional neural network compare in performance to a standard convolutional neural network within a Visual Question Answering architecture?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0001",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c013",
+          "question": "What core component allows sequence-to-sequence models to connect source sequences and target words for abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0002",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c014",
+          "question": "What neural network architecture serves as the foundation for the contrastive attention mechanism in abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0011",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c015",
+          "question": "What proportion of comments in the CQA-QL corpus are classified as Good?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0016",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c016",
+          "question": "What are the data statistics and breakdown for the CQA-QL corpus English dataset splits?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0017",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c017",
+          "question": "What architecture and dataset were used to train the back-translation model for generating query and context paraphrases?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c018",
+          "question": "How are back-translation paraphrases of queries and contexts incorporated into the training data in \"An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering\"?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0021",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c019",
+          "question": "What is the primary objective in the Community Question Answering subtask A from SemEval-2016 Task 3?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0002",
+          "chunk_rank": 7,
+          "paper_rank": 1,
+          "top_paper": "Machine Translation Evaluation Meets Community Question Answering"
+        },
+        {
+          "question_id": "c020",
+          "question": "How much do the domain-specific QL VECTORS contribute to the MAP score in the Machine Translation Evaluation Meets Community Question Answering study?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0022",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Machine Translation Evaluation Meets Community Question Answering"
+        },
+        {
+          "question_id": "c021",
+          "question": "How are the query, key, and value representations computed from the input state in the self-attention mechanism of Déjà vu?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0031",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c022",
+          "question": "How does replacing the M alpha component with a flat attention module affect the performance of the Déjà vu model?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0064",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c023",
+          "question": "What is the difference between Thorough Decoding and Fast Decoding in the RAG-Sequence model?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0016",
+          "chunk_rank": 3,
+          "paper_rank": 3,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c024",
+          "question": "How close is the classification accuracy of RAG compared to the RoBERTa model trained by Thorne and Vlachos for two-way classification?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0032",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "question_id": "c025",
+          "question": "What machine translation datasets are used to evaluate the attention mechanism with energy-friendly operations?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c026",
+          "question": "What energy and accuracy results did the E-Att attention model achieve on machine translation tasks compared to the vanilla attention mechanism?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0001",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c027",
+          "question": "How are the parameter matrices for queries, keys, and values represented in a specific attention head within the Transformer multi-head self-attention sub-layer?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0004",
+          "chunk_rank": 3,
+          "paper_rank": 2,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c028",
+          "question": "How is the linear combination of the relative position contributions defined in the Generalized Attention Mechanism?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c029",
+          "question": "How does WizardLM generate an evolved instruction dataset through multiple iterations?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0015",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c030",
+          "question": "What are the primary contributions and findings regarding the Evol-Instruct method and the WizardLM model?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0010",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c031",
+          "question": "What two techniques are used by the Tied-Atomic model to improve upon DSI generative retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0006",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c032",
+          "question": "How does generative retrieval using Atomic DocIDs mathematically compare to dense retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0013",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c033",
+          "question": "How do varying the parameters of Adaptive LADR impact RBO and latency compared to Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0059",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c034",
+          "question": "How does Adaptive LADR improve upon the basic neighborhood selection approach used in Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0026",
+          "chunk_rank": 9,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c035",
+          "question": "How does PB-LLM handle salient weights to achieve extreme low-bit quantization?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0008",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c036",
+          "question": "What is the core concept of the PB-LLM approach regarding model weights?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0007",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c037",
+          "question": "What zero-shot evaluation scores did the LLaMA-2-7B model achieve across various NLP and code generation benchmarks when fine-tuned with different data configurations?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0009",
+          "chunk_rank": 5,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c038",
+          "question": "How do different types of instruction datasets impact the capabilities of large language models?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0002",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c039",
+          "question": "How does varying the amount of negative data affect math task performance when fine-tuning large language models as agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0026",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c040",
+          "question": "What baseline settings are used to evaluate NAT in the study on integrating negative examples for LLM agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0020",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c041",
+          "question": "Which publication venue featured the 2018 study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0062",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c042",
+          "question": "Why do dense retrieval models struggle when applied to out-of-distribution datasets compared to traditional systems like BM25?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0003",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c043",
+          "question": "What are some limitations regarding architecture and evaluation scope in the study of scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0055",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c044",
+          "question": "Why is an irreducible loss term included in the model size scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0037",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c045",
+          "question": "What function does the clipping mechanism serve in the Proximal Policy Optimization objective for large language models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0079",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c046",
+          "question": "What are the primary benefits of implementing the Retrieval-Augmented Generation framework in generative AI models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c047",
+          "question": "What empirical evaluations were performed to assess the performance and properties of daGPAM?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0029",
+          "chunk_rank": 5,
+          "paper_rank": 5,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c048",
+          "question": "What limitations are associated with previous strategies that attempt to resolve the rank-collapse issue in Transformer models?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0006",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c049",
+          "question": "What are the trade-offs associated with forcing a Retrieval-Augmented Generation system to answer questions accurately without relying on retrieved documents as a defense against membership inference attacks?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0078",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c050",
+          "question": "How does the membership inference attack in RAG systems determine whether a target document is included in the knowledge base?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0041",
+          "chunk_rank": 7,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c051",
+          "question": "How does the single-step GFM-RAG model score on the HotpotQA dataset for R@2 and R@5?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0035",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c052",
+          "question": "How is the knowledge graph index constructed in GFM-RAG?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c053",
+          "question": "What is GRITHopper-7B and what motivated its development?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0007",
+          "chunk_rank": null,
+          "paper_rank": null,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c054",
+          "question": "What are the primary performance drawbacks associated with the Multi-Hop Dense Retrieval framework?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0005",
+          "chunk_rank": null,
+          "paper_rank": 2,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c055",
+          "question": "How did large and medium open-source large language models perform regarding answer faithfulness in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0046",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c056",
+          "question": "How is the precision at k metric calculated for evaluating retrieval relevance in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c057",
+          "question": "What key components are consistently included in the prompts used by the FAIR-RAG framework to guide model behavior?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0040",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c058",
+          "question": "What F1-score did FAIR-RAG achieve on the HotpotQA benchmark?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0011",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c059",
+          "question": "How is the evaluation split constructed in the domain-adaptive dense retrieval work for content-based recommendation to prevent data leakage and test semantic generalization?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0021",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c060",
+          "question": "What are the primary limitations of traditional sparse retrieval methods like Okapi BM25 in information retrieval?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c061",
+          "question": "Did cluster-based semantic chunking consistently improve retrieval-augmented generation performance on academic texts?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0015",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c062",
+          "question": "What future improvements are suggested for evaluating chunking strategies in academic text retrieval-augmented generation?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0016",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c063",
+          "question": "What caused the difference in expected scores between Temporal questions and Default NP questions in the QA engine diagnostic evaluation?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0032",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        },
+        {
+          "question_id": "c064",
+          "question": "What percentage of questions are found to be literally impossible to solve using only term weighting due to correct sentences being absent from the MaxOsets in the TREC data analysis?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0025",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        }
+      ]
+    },
+    {
+      "configuration": "dense",
+      "chunk_recall_at_1": 0.4219,
+      "chunk_recall_at_5": 0.625,
+      "chunk_recall_at_10": 0.7812,
+      "chunk_mrr": 0.5232,
+      "paper_recall_at_1": 0.9375,
+      "paper_recall_at_5": 0.9531,
+      "seconds": 0.04,
+      "outcomes": [
+        {
+          "question_id": "c001",
+          "question": "What was the perplexity of the Recurrent NN-1024 combined with MaxEnt 9-gram model on the One Billion Word Benchmark test set?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0005",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c002",
+          "question": "What model achieved the best results among the evaluated approaches in the One Billion Word Benchmark study?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0001",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c003",
+          "question": "What specific value of dropout rate was used for the base Transformer model during training?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0030",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c004",
+          "question": "What two sub-layers make up each layer of the Transformer encoder in Attention Is All You Need?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c005",
+          "question": "How are the final answer predictions and training loss determined in the Attention on Attention VQA architecture?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0011",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c006",
+          "question": "What improvements did the Attention on Attention architecture introduce to advance Visual Question Answering tasks?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0020",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c007",
+          "question": "How are the forward and reverse recurrent networks used to create annotation vectors in a bidirectional encoder for neural machine translation?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c008",
+          "question": "What is the primary advantage of the fine-grained attention mechanism in neural machine translation according to the experimental results?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0004",
+          "chunk_rank": 5,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c009",
+          "question": "How does increasing the model size impact fine-tuning task accuracy in BERT?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0043",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c010",
+          "question": "What is the name of the first fine-tuning based representation model to achieve state-of-the-art results across a large suite of sentence-level and token-level tasks?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0006",
+          "chunk_rank": null,
+          "paper_rank": null,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c011",
+          "question": "How does the accuracy change when introducing sparsity to the Sparse Mixture of Experts model for Visual Question Answering, according to the experimental results?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0007",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c012",
+          "question": "How does a sparsely activated convolutional neural network compare in performance to a standard convolutional neural network within a Visual Question Answering architecture?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0001",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c013",
+          "question": "What core component allows sequence-to-sequence models to connect source sequences and target words for abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0002",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c014",
+          "question": "What neural network architecture serves as the foundation for the contrastive attention mechanism in abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0011",
+          "chunk_rank": 10,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c015",
+          "question": "What proportion of comments in the CQA-QL corpus are classified as Good?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0016",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c016",
+          "question": "What are the data statistics and breakdown for the CQA-QL corpus English dataset splits?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0017",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c017",
+          "question": "What architecture and dataset were used to train the back-translation model for generating query and context paraphrases?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c018",
+          "question": "How are back-translation paraphrases of queries and contexts incorporated into the training data in \"An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering\"?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0021",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c019",
+          "question": "What is the primary objective in the Community Question Answering subtask A from SemEval-2016 Task 3?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0002",
+          "chunk_rank": null,
+          "paper_rank": null,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c020",
+          "question": "How much do the domain-specific QL VECTORS contribute to the MAP score in the Machine Translation Evaluation Meets Community Question Answering study?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0022",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Machine Translation Evaluation Meets Community Question Answering"
+        },
+        {
+          "question_id": "c021",
+          "question": "How are the query, key, and value representations computed from the input state in the self-attention mechanism of Déjà vu?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0031",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c022",
+          "question": "How does replacing the M alpha component with a flat attention module affect the performance of the Déjà vu model?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0064",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c023",
+          "question": "What is the difference between Thorough Decoding and Fast Decoding in the RAG-Sequence model?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0016",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "question_id": "c024",
+          "question": "How close is the classification accuracy of RAG compared to the RoBERTa model trained by Thorne and Vlachos for two-way classification?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0032",
+          "chunk_rank": null,
+          "paper_rank": 5,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c025",
+          "question": "What machine translation datasets are used to evaluate the attention mechanism with energy-friendly operations?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c026",
+          "question": "What energy and accuracy results did the E-Att attention model achieve on machine translation tasks compared to the vanilla attention mechanism?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0001",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c027",
+          "question": "How are the parameter matrices for queries, keys, and values represented in a specific attention head within the Transformer multi-head self-attention sub-layer?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0004",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c028",
+          "question": "How is the linear combination of the relative position contributions defined in the Generalized Attention Mechanism?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c029",
+          "question": "How does WizardLM generate an evolved instruction dataset through multiple iterations?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0015",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c030",
+          "question": "What are the primary contributions and findings regarding the Evol-Instruct method and the WizardLM model?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0010",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c031",
+          "question": "What two techniques are used by the Tied-Atomic model to improve upon DSI generative retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c032",
+          "question": "How does generative retrieval using Atomic DocIDs mathematically compare to dense retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c033",
+          "question": "How do varying the parameters of Adaptive LADR impact RBO and latency compared to Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0059",
+          "chunk_rank": 10,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c034",
+          "question": "How does Adaptive LADR improve upon the basic neighborhood selection approach used in Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0026",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c035",
+          "question": "How does PB-LLM handle salient weights to achieve extreme low-bit quantization?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0008",
+          "chunk_rank": 8,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c036",
+          "question": "What is the core concept of the PB-LLM approach regarding model weights?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0007",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c037",
+          "question": "What zero-shot evaluation scores did the LLaMA-2-7B model achieve across various NLP and code generation benchmarks when fine-tuned with different data configurations?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0009",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c038",
+          "question": "How do different types of instruction datasets impact the capabilities of large language models?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0002",
+          "chunk_rank": 8,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c039",
+          "question": "How does varying the amount of negative data affect math task performance when fine-tuning large language models as agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0026",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c040",
+          "question": "What baseline settings are used to evaluate NAT in the study on integrating negative examples for LLM agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0020",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c041",
+          "question": "Which publication venue featured the 2018 study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0062",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c042",
+          "question": "Why do dense retrieval models struggle when applied to out-of-distribution datasets compared to traditional systems like BM25?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0003",
+          "chunk_rank": null,
+          "paper_rank": null,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c043",
+          "question": "What are some limitations regarding architecture and evaluation scope in the study of scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0055",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c044",
+          "question": "Why is an irreducible loss term included in the model size scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0037",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c045",
+          "question": "What function does the clipping mechanism serve in the Proximal Policy Optimization objective for large language models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0079",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c046",
+          "question": "What are the primary benefits of implementing the Retrieval-Augmented Generation framework in generative AI models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0018",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c047",
+          "question": "What empirical evaluations were performed to assess the performance and properties of daGPAM?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0029",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c048",
+          "question": "What limitations are associated with previous strategies that attempt to resolve the rank-collapse issue in Transformer models?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0006",
+          "chunk_rank": 8,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c049",
+          "question": "What are the trade-offs associated with forcing a Retrieval-Augmented Generation system to answer questions accurately without relying on retrieved documents as a defense against membership inference attacks?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0078",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c050",
+          "question": "How does the membership inference attack in RAG systems determine whether a target document is included in the knowledge base?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0041",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c051",
+          "question": "How does the single-step GFM-RAG model score on the HotpotQA dataset for R@2 and R@5?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0035",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c052",
+          "question": "How is the knowledge graph index constructed in GFM-RAG?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0018",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c053",
+          "question": "What is GRITHopper-7B and what motivated its development?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0007",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c054",
+          "question": "What are the primary performance drawbacks associated with the Multi-Hop Dense Retrieval framework?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0005",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c055",
+          "question": "How did large and medium open-source large language models perform regarding answer faithfulness in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0046",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c056",
+          "question": "How is the precision at k metric calculated for evaluating retrieval relevance in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c057",
+          "question": "What key components are consistently included in the prompts used by the FAIR-RAG framework to guide model behavior?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0040",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c058",
+          "question": "What F1-score did FAIR-RAG achieve on the HotpotQA benchmark?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0011",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c059",
+          "question": "How is the evaluation split constructed in the domain-adaptive dense retrieval work for content-based recommendation to prevent data leakage and test semantic generalization?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0021",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c060",
+          "question": "What are the primary limitations of traditional sparse retrieval methods like Okapi BM25 in information retrieval?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c061",
+          "question": "Did cluster-based semantic chunking consistently improve retrieval-augmented generation performance on academic texts?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0015",
+          "chunk_rank": 8,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c062",
+          "question": "What future improvements are suggested for evaluating chunking strategies in academic text retrieval-augmented generation?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0016",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c063",
+          "question": "What caused the difference in expected scores between Temporal questions and Default NP questions in the QA engine diagnostic evaluation?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0032",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        },
+        {
+          "question_id": "c064",
+          "question": "What percentage of questions are found to be literally impossible to solve using only term weighting due to correct sentences being absent from the MaxOsets in the TREC data analysis?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0025",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        }
+      ]
+    },
+    {
+      "configuration": "hybrid",
+      "chunk_recall_at_1": 0.4375,
+      "chunk_recall_at_5": 0.8125,
+      "chunk_recall_at_10": 0.8906,
+      "chunk_mrr": 0.601,
+      "paper_recall_at_1": 0.9219,
+      "paper_recall_at_5": 0.9844,
+      "seconds": 0.69,
+      "outcomes": [
+        {
+          "question_id": "c001",
+          "question": "What was the perplexity of the Recurrent NN-1024 combined with MaxEnt 9-gram model on the One Billion Word Benchmark test set?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0005",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c002",
+          "question": "What model achieved the best results among the evaluated approaches in the One Billion Word Benchmark study?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0001",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c003",
+          "question": "What specific value of dropout rate was used for the base Transformer model during training?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0030",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c004",
+          "question": "What two sub-layers make up each layer of the Transformer encoder in Attention Is All You Need?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c005",
+          "question": "How are the final answer predictions and training loss determined in the Attention on Attention VQA architecture?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0011",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c006",
+          "question": "What improvements did the Attention on Attention architecture introduce to advance Visual Question Answering tasks?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0020",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c007",
+          "question": "How are the forward and reverse recurrent networks used to create annotation vectors in a bidirectional encoder for neural machine translation?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c008",
+          "question": "What is the primary advantage of the fine-grained attention mechanism in neural machine translation according to the experimental results?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0004",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c009",
+          "question": "How does increasing the model size impact fine-tuning task accuracy in BERT?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0043",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c010",
+          "question": "What is the name of the first fine-tuning based representation model to achieve state-of-the-art results across a large suite of sentence-level and token-level tasks?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0006",
+          "chunk_rank": 8,
+          "paper_rank": 4,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c011",
+          "question": "How does the accuracy change when introducing sparsity to the Sparse Mixture of Experts model for Visual Question Answering, according to the experimental results?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0007",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c012",
+          "question": "How does a sparsely activated convolutional neural network compare in performance to a standard convolutional neural network within a Visual Question Answering architecture?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0001",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c013",
+          "question": "What core component allows sequence-to-sequence models to connect source sequences and target words for abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0002",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c014",
+          "question": "What neural network architecture serves as the foundation for the contrastive attention mechanism in abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0011",
+          "chunk_rank": 9,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c015",
+          "question": "What proportion of comments in the CQA-QL corpus are classified as Good?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0016",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c016",
+          "question": "What are the data statistics and breakdown for the CQA-QL corpus English dataset splits?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0017",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c017",
+          "question": "What architecture and dataset were used to train the back-translation model for generating query and context paraphrases?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c018",
+          "question": "How are back-translation paraphrases of queries and contexts incorporated into the training data in \"An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering\"?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0021",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c019",
+          "question": "What is the primary objective in the Community Question Answering subtask A from SemEval-2016 Task 3?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0002",
+          "chunk_rank": 7,
+          "paper_rank": 7,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c020",
+          "question": "How much do the domain-specific QL VECTORS contribute to the MAP score in the Machine Translation Evaluation Meets Community Question Answering study?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0022",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Machine Translation Evaluation Meets Community Question Answering"
+        },
+        {
+          "question_id": "c021",
+          "question": "How are the query, key, and value representations computed from the input state in the self-attention mechanism of Déjà vu?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0031",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c022",
+          "question": "How does replacing the M alpha component with a flat attention module affect the performance of the Déjà vu model?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0064",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c023",
+          "question": "What is the difference between Thorough Decoding and Fast Decoding in the RAG-Sequence model?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0016",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "question_id": "c024",
+          "question": "How close is the classification accuracy of RAG compared to the RoBERTa model trained by Thorne and Vlachos for two-way classification?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0032",
+          "chunk_rank": 2,
+          "paper_rank": 2,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c025",
+          "question": "What machine translation datasets are used to evaluate the attention mechanism with energy-friendly operations?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c026",
+          "question": "What energy and accuracy results did the E-Att attention model achieve on machine translation tasks compared to the vanilla attention mechanism?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0001",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c027",
+          "question": "How are the parameter matrices for queries, keys, and values represented in a specific attention head within the Transformer multi-head self-attention sub-layer?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0004",
+          "chunk_rank": 3,
+          "paper_rank": 2,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c028",
+          "question": "How is the linear combination of the relative position contributions defined in the Generalized Attention Mechanism?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c029",
+          "question": "How does WizardLM generate an evolved instruction dataset through multiple iterations?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0015",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c030",
+          "question": "What are the primary contributions and findings regarding the Evol-Instruct method and the WizardLM model?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0010",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c031",
+          "question": "What two techniques are used by the Tied-Atomic model to improve upon DSI generative retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c032",
+          "question": "How does generative retrieval using Atomic DocIDs mathematically compare to dense retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c033",
+          "question": "How do varying the parameters of Adaptive LADR impact RBO and latency compared to Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0059",
+          "chunk_rank": 5,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c034",
+          "question": "How does Adaptive LADR improve upon the basic neighborhood selection approach used in Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0026",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c035",
+          "question": "How does PB-LLM handle salient weights to achieve extreme low-bit quantization?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0008",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c036",
+          "question": "What is the core concept of the PB-LLM approach regarding model weights?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0007",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c037",
+          "question": "What zero-shot evaluation scores did the LLaMA-2-7B model achieve across various NLP and code generation benchmarks when fine-tuned with different data configurations?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0009",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c038",
+          "question": "How do different types of instruction datasets impact the capabilities of large language models?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0002",
+          "chunk_rank": 5,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c039",
+          "question": "How does varying the amount of negative data affect math task performance when fine-tuning large language models as agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0026",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c040",
+          "question": "What baseline settings are used to evaluate NAT in the study on integrating negative examples for LLM agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0020",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c041",
+          "question": "Which publication venue featured the 2018 study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0062",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c042",
+          "question": "Why do dense retrieval models struggle when applied to out-of-distribution datasets compared to traditional systems like BM25?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0003",
+          "chunk_rank": 2,
+          "paper_rank": 2,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c043",
+          "question": "What are some limitations regarding architecture and evaluation scope in the study of scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0055",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c044",
+          "question": "Why is an irreducible loss term included in the model size scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0037",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c045",
+          "question": "What function does the clipping mechanism serve in the Proximal Policy Optimization objective for large language models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0079",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c046",
+          "question": "What are the primary benefits of implementing the Retrieval-Augmented Generation framework in generative AI models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0018",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c047",
+          "question": "What empirical evaluations were performed to assess the performance and properties of daGPAM?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0029",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c048",
+          "question": "What limitations are associated with previous strategies that attempt to resolve the rank-collapse issue in Transformer models?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0006",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c049",
+          "question": "What are the trade-offs associated with forcing a Retrieval-Augmented Generation system to answer questions accurately without relying on retrieved documents as a defense against membership inference attacks?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0078",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c050",
+          "question": "How does the membership inference attack in RAG systems determine whether a target document is included in the knowledge base?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0041",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c051",
+          "question": "How does the single-step GFM-RAG model score on the HotpotQA dataset for R@2 and R@5?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0035",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c052",
+          "question": "How is the knowledge graph index constructed in GFM-RAG?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0018",
+          "chunk_rank": 10,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c053",
+          "question": "What is GRITHopper-7B and what motivated its development?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0007",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c054",
+          "question": "What are the primary performance drawbacks associated with the Multi-Hop Dense Retrieval framework?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0005",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c055",
+          "question": "How did large and medium open-source large language models perform regarding answer faithfulness in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0046",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c056",
+          "question": "How is the precision at k metric calculated for evaluating retrieval relevance in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c057",
+          "question": "What key components are consistently included in the prompts used by the FAIR-RAG framework to guide model behavior?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0040",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c058",
+          "question": "What F1-score did FAIR-RAG achieve on the HotpotQA benchmark?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0011",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c059",
+          "question": "How is the evaluation split constructed in the domain-adaptive dense retrieval work for content-based recommendation to prevent data leakage and test semantic generalization?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0021",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c060",
+          "question": "What are the primary limitations of traditional sparse retrieval methods like Okapi BM25 in information retrieval?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c061",
+          "question": "Did cluster-based semantic chunking consistently improve retrieval-augmented generation performance on academic texts?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0015",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c062",
+          "question": "What future improvements are suggested for evaluating chunking strategies in academic text retrieval-augmented generation?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0016",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c063",
+          "question": "What caused the difference in expected scores between Temporal questions and Default NP questions in the QA engine diagnostic evaluation?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0032",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        },
+        {
+          "question_id": "c064",
+          "question": "What percentage of questions are found to be literally impossible to solve using only term weighting due to correct sentences being absent from the MaxOsets in the TREC data analysis?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0025",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        }
+      ]
+    },
+    {
+      "configuration": "hybrid + rerank",
+      "chunk_recall_at_1": 0.5312,
+      "chunk_recall_at_5": 0.875,
+      "chunk_recall_at_10": 0.9375,
+      "chunk_mrr": 0.6897,
+      "paper_recall_at_1": 0.9844,
+      "paper_recall_at_5": 0.9844,
+      "seconds": 28.61,
+      "outcomes": [
+        {
+          "question_id": "c001",
+          "question": "What was the perplexity of the Recurrent NN-1024 combined with MaxEnt 9-gram model on the One Billion Word Benchmark test set?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0005",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c002",
+          "question": "What model achieved the best results among the evaluated approaches in the One Billion Word Benchmark study?",
+          "expected_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+          "expected_chunk": "1312.3005-0001",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+        },
+        {
+          "question_id": "c003",
+          "question": "What specific value of dropout rate was used for the base Transformer model during training?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0030",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c004",
+          "question": "What two sub-layers make up each layer of the Transformer encoder in Attention Is All You Need?",
+          "expected_paper": "Attention Is All You Need",
+          "expected_chunk": "1706.03762-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Is All You Need"
+        },
+        {
+          "question_id": "c005",
+          "question": "How are the final answer predictions and training loss determined in the Attention on Attention VQA architecture?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0011",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c006",
+          "question": "What improvements did the Attention on Attention architecture introduce to advance Visual Question Answering tasks?",
+          "expected_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+          "expected_chunk": "1803.07724-0020",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Attention on Attention: Architectures for Visual Question Answering (VQA)"
+        },
+        {
+          "question_id": "c007",
+          "question": "How are the forward and reverse recurrent networks used to create annotation vectors in a bidirectional encoder for neural machine translation?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0006",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c008",
+          "question": "What is the primary advantage of the fine-grained attention mechanism in neural machine translation according to the experimental results?",
+          "expected_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+          "expected_chunk": "1803.11407-0004",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "Fine-Grained Attention Mechanism for Neural Machine Translation"
+        },
+        {
+          "question_id": "c009",
+          "question": "How does increasing the model size impact fine-tuning task accuracy in BERT?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0043",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c010",
+          "question": "What is the name of the first fine-tuning based representation model to achieve state-of-the-art results across a large suite of sentence-level and token-level tasks?",
+          "expected_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "expected_chunk": "1810.04805-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+        },
+        {
+          "question_id": "c011",
+          "question": "How does the accuracy change when introducing sparsity to the Sparse Mixture of Experts model for Visual Question Answering, according to the experimental results?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0007",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c012",
+          "question": "How does a sparsely activated convolutional neural network compare in performance to a standard convolutional neural network within a Visual Question Answering architecture?",
+          "expected_paper": "Learning Sparse Mixture of Experts for Visual Question Answering",
+          "expected_chunk": "1909.09192-0001",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Learning Sparse Mixture of Experts for Visual Question Answering"
+        },
+        {
+          "question_id": "c013",
+          "question": "What core component allows sequence-to-sequence models to connect source sequences and target words for abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0002",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c014",
+          "question": "What neural network architecture serves as the foundation for the contrastive attention mechanism in abstractive sentence summarization?",
+          "expected_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+          "expected_chunk": "1910.13114-0011",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Contrastive Attention Mechanism for Abstractive Sentence Summarization"
+        },
+        {
+          "question_id": "c015",
+          "question": "What proportion of comments in the CQA-QL corpus are classified as Good?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0016",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c016",
+          "question": "What are the data statistics and breakdown for the CQA-QL corpus English dataset splits?",
+          "expected_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+          "expected_chunk": "1911.11403-0017",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c017",
+          "question": "What architecture and dataset were used to train the back-translation model for generating query and context paraphrases?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c018",
+          "question": "How are back-translation paraphrases of queries and contexts incorporated into the training data in \"An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering\"?",
+          "expected_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+          "expected_chunk": "1912.02145-0021",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering"
+        },
+        {
+          "question_id": "c019",
+          "question": "What is the primary objective in the Community Question Answering subtask A from SemEval-2016 Task 3?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0002",
+          "chunk_rank": null,
+          "paper_rank": null,
+          "top_paper": "SemEval-2015 Task 3: Answer Selection in Community Question Answering"
+        },
+        {
+          "question_id": "c020",
+          "question": "How much do the domain-specific QL VECTORS contribute to the MAP score in the Machine Translation Evaluation Meets Community Question Answering study?",
+          "expected_paper": "Machine Translation Evaluation Meets Community Question Answering",
+          "expected_chunk": "1912.02998-0022",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Machine Translation Evaluation Meets Community Question Answering"
+        },
+        {
+          "question_id": "c021",
+          "question": "How are the query, key, and value representations computed from the input state in the self-attention mechanism of Déjà vu?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0031",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c022",
+          "question": "How does replacing the M alpha component with a flat attention module affect the performance of the Déjà vu model?",
+          "expected_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+          "expected_chunk": "2002.00741-0064",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation"
+        },
+        {
+          "question_id": "c023",
+          "question": "What is the difference between Thorough Decoding and Fast Decoding in the RAG-Sequence model?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0016",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "question_id": "c024",
+          "question": "How close is the classification accuracy of RAG compared to the RoBERTa model trained by Thorne and Vlachos for two-way classification?",
+          "expected_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_chunk": "2005.11401-0032",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "question_id": "c025",
+          "question": "What machine translation datasets are used to evaluate the attention mechanism with energy-friendly operations?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c026",
+          "question": "What energy and accuracy results did the E-Att attention model achieve on machine translation tasks compared to the vanilla attention mechanism?",
+          "expected_paper": "Attention Mechanism with Energy-Friendly Operations",
+          "expected_chunk": "2204.13353-0001",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Attention Mechanism with Energy-Friendly Operations"
+        },
+        {
+          "question_id": "c027",
+          "question": "How are the parameter matrices for queries, keys, and values represented in a specific attention head within the Transformer multi-head self-attention sub-layer?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0004",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c028",
+          "question": "How is the linear combination of the relative position contributions defined in the Generalized Attention Mechanism?",
+          "expected_paper": "Generalized Attention Mechanism and Relative Position for Transformer",
+          "expected_chunk": "2208.10247-0009",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Attention Mechanism and Relative Position for Transformer"
+        },
+        {
+          "question_id": "c029",
+          "question": "How does WizardLM generate an evolved instruction dataset through multiple iterations?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0015",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c030",
+          "question": "What are the primary contributions and findings regarding the Evol-Instruct method and the WizardLM model?",
+          "expected_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+          "expected_chunk": "2304.12244-0010",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "WizardLM: Empowering large pre-trained language models to follow complex instructions"
+        },
+        {
+          "question_id": "c031",
+          "question": "What two techniques are used by the Tied-Atomic model to improve upon DSI generative retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0006",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c032",
+          "question": "How does generative retrieval using Atomic DocIDs mathematically compare to dense retrieval?",
+          "expected_paper": "Generative Retrieval as Dense Retrieval",
+          "expected_chunk": "2306.11397-0013",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generative Retrieval as Dense Retrieval"
+        },
+        {
+          "question_id": "c033",
+          "question": "How do varying the parameters of Adaptive LADR impact RBO and latency compared to Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0059",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c034",
+          "question": "How does Adaptive LADR improve upon the basic neighborhood selection approach used in Proactive LADR?",
+          "expected_paper": "Lexically-Accelerated Dense Retrieval",
+          "expected_chunk": "2307.16779-0026",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Lexically-Accelerated Dense Retrieval"
+        },
+        {
+          "question_id": "c035",
+          "question": "How does PB-LLM handle salient weights to achieve extreme low-bit quantization?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0008",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c036",
+          "question": "What is the core concept of the PB-LLM approach regarding model weights?",
+          "expected_paper": "PB-LLM: Partially Binarized Large Language Models",
+          "expected_chunk": "2310.00034-0007",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "PB-LLM: Partially Binarized Large Language Models"
+        },
+        {
+          "question_id": "c037",
+          "question": "What zero-shot evaluation scores did the LLaMA-2-7B model achieve across various NLP and code generation benchmarks when fine-tuned with different data configurations?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0009",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c038",
+          "question": "How do different types of instruction datasets impact the capabilities of large language models?",
+          "expected_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+          "expected_chunk": "2312.10793-0002",
+          "chunk_rank": 7,
+          "paper_rank": 1,
+          "top_paper": "Demystifying Instruction Mixing for Fine-tuning Large Language Models"
+        },
+        {
+          "question_id": "c039",
+          "question": "How does varying the amount of negative data affect math task performance when fine-tuning large language models as agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0026",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c040",
+          "question": "What baseline settings are used to evaluate NAT in the study on integrating negative examples for LLM agents?",
+          "expected_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+          "expected_chunk": "2402.11651-0020",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents"
+        },
+        {
+          "question_id": "c041",
+          "question": "Which publication venue featured the 2018 study on Anserini by Peilin Yang, Hui Fang, and Jimmy Lin?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0062",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c042",
+          "question": "Why do dense retrieval models struggle when applied to out-of-distribution datasets compared to traditional systems like BM25?",
+          "expected_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+          "expected_chunk": "2403.08970-0003",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling"
+        },
+        {
+          "question_id": "c043",
+          "question": "What are some limitations regarding architecture and evaluation scope in the study of scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0055",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c044",
+          "question": "Why is an irreducible loss term included in the model size scaling laws for dense retrieval?",
+          "expected_paper": "Scaling Laws For Dense Retrieval",
+          "expected_chunk": "2403.18684-0037",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Scaling Laws For Dense Retrieval"
+        },
+        {
+          "question_id": "c045",
+          "question": "What function does the clipping mechanism serve in the Proximal Policy Optimization objective for large language models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0079",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c046",
+          "question": "What are the primary benefits of implementing the Retrieval-Augmented Generation framework in generative AI models?",
+          "expected_paper": "Exploring Advanced Large Language Models with LLMsuite",
+          "expected_chunk": "2407.12036-0018",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Exploring Advanced Large Language Models with LLMsuite"
+        },
+        {
+          "question_id": "c047",
+          "question": "What empirical evaluations were performed to assess the performance and properties of daGPAM?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0029",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c048",
+          "question": "What limitations are associated with previous strategies that attempt to resolve the rank-collapse issue in Transformer models?",
+          "expected_paper": "Generalized Probabilistic Attention Mechanism in Transformers",
+          "expected_chunk": "2410.15578-0006",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Generalized Probabilistic Attention Mechanism in Transformers"
+        },
+        {
+          "question_id": "c049",
+          "question": "What are the trade-offs associated with forcing a Retrieval-Augmented Generation system to answer questions accurately without relying on retrieved documents as a defense against membership inference attacks?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0078",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c050",
+          "question": "How does the membership inference attack in RAG systems determine whether a target document is included in the knowledge base?",
+          "expected_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+          "expected_chunk": "2502.00306-0041",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c051",
+          "question": "How does the single-step GFM-RAG model score on the HotpotQA dataset for R@2 and R@5?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0035",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c052",
+          "question": "How is the knowledge graph index constructed in GFM-RAG?",
+          "expected_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+          "expected_chunk": "2502.01113-0018",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+        },
+        {
+          "question_id": "c053",
+          "question": "What is GRITHopper-7B and what motivated its development?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0007",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c054",
+          "question": "What are the primary performance drawbacks associated with the Multi-Hop Dense Retrieval framework?",
+          "expected_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+          "expected_chunk": "2503.07519-0005",
+          "chunk_rank": null,
+          "paper_rank": 1,
+          "top_paper": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval"
+        },
+        {
+          "question_id": "c055",
+          "question": "How did large and medium open-source large language models perform regarding answer faithfulness in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0046",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c056",
+          "question": "How is the precision at k metric calculated for evaluating retrieval relevance in Quranic studies?",
+          "expected_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+          "expected_chunk": "2503.16581-0018",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+        },
+        {
+          "question_id": "c057",
+          "question": "What key components are consistently included in the prompts used by the FAIR-RAG framework to guide model behavior?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0040",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c058",
+          "question": "What F1-score did FAIR-RAG achieve on the HotpotQA benchmark?",
+          "expected_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "expected_chunk": "2510.22344-0011",
+          "chunk_rank": 4,
+          "paper_rank": 1,
+          "top_paper": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+        },
+        {
+          "question_id": "c059",
+          "question": "How is the evaluation split constructed in the domain-adaptive dense retrieval work for content-based recommendation to prevent data leakage and test semantic generalization?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0021",
+          "chunk_rank": 3,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c060",
+          "question": "What are the primary limitations of traditional sparse retrieval methods like Okapi BM25 in information retrieval?",
+          "expected_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+          "expected_chunk": "2602.00899-0009",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation"
+        },
+        {
+          "question_id": "c061",
+          "question": "Did cluster-based semantic chunking consistently improve retrieval-augmented generation performance on academic texts?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0015",
+          "chunk_rank": 6,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c062",
+          "question": "What future improvements are suggested for evaluating chunking strategies in academic text retrieval-augmented generation?",
+          "expected_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+          "expected_chunk": "2607.01852-0016",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts"
+        },
+        {
+          "question_id": "c063",
+          "question": "What caused the difference in expected scores between Temporal questions and Default NP questions in the QA engine diagnostic evaluation?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0032",
+          "chunk_rank": 1,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        },
+        {
+          "question_id": "c064",
+          "question": "What percentage of questions are found to be literally impossible to solve using only term weighting due to correct sentences being absent from the MaxOsets in the TREC data analysis?",
+          "expected_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+          "expected_chunk": "cs_0107006-0025",
+          "chunk_rank": 2,
+          "paper_rank": 1,
+          "top_paper": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine"
+        }
+      ]
+    }
+  ]
+}

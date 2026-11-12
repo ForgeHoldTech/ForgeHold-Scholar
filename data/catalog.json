@@ -1,0 +1,661 @@
+{
+  "paper_count": 33,
+  "papers": [
+    {
+      "arxiv_id": "1706.03762",
+      "version": "v7",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "published": "2017-06-12T17:57:34Z",
+      "updated": "2023-08-02T00:41:18Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "summary": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+      "filename": "1706.03762.pdf"
+    },
+    {
+      "arxiv_id": "1810.04805",
+      "version": "v2",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": [
+        "Jacob Devlin",
+        "Ming-Wei Chang",
+        "Kenton Lee",
+        "Kristina Toutanova"
+      ],
+      "published": "2018-10-11T00:50:01Z",
+      "updated": "2019-05-24T20:37:26Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+      "filename": "1810.04805.pdf"
+    },
+    {
+      "arxiv_id": "2005.11401",
+      "version": "v4",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": [
+        "Patrick Lewis",
+        "Ethan Perez",
+        "Aleksandra Piktus",
+        "Fabio Petroni",
+        "Vladimir Karpukhin",
+        "Naman Goyal",
+        "Heinrich Küttler",
+        "Mike Lewis",
+        "Wen-tau Yih",
+        "Tim Rocktäschel",
+        "Sebastian Riedel",
+        "Douwe Kiela"
+      ],
+      "published": "2020-05-22T21:34:34Z",
+      "updated": "2021-04-12T15:42:18Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "summary": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+      "filename": "2005.11401.pdf"
+    },
+    {
+      "arxiv_id": "2002.00741",
+      "version": "v1",
+      "title": "Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation",
+      "authors": [
+        "Jibang Wu",
+        "Renqin Cai",
+        "Hongning Wang"
+      ],
+      "published": "2020-01-29T20:27:42Z",
+      "updated": "2020-01-29T20:27:42Z",
+      "categories": [
+        "cs.IR",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "summary": "Predicting users' preferences based on their sequential behaviors in history is challenging and crucial for modern recommender systems. Most existing sequential recommendation algorithms focus on transitional structure among the sequential actions, but largely ignore the temporal and context information, when modeling the influence of a historical event to current prediction. In this paper, we argue that the influence from the past events on a user's current action should vary over the course of time and under different context. Thus, we propose a Contextualized Temporal Attention Mechanism that learns to weigh historical actions' influence on not only what action it is, but also when and how the action took place. More specifically, to dynamically calibrate the relative input dependence from the self-attention mechanism, we deploy multiple parameterized kernel functions to learn various temporal dynamics, and then use the context information to determine which of these reweighing kernels to follow for each input. In empirical evaluations on two large public recommendation datasets, our model consistently outperformed an extensive set of state-of-the-art sequential recommendation methods.",
+      "filename": "2002.00741.pdf"
+    },
+    {
+      "arxiv_id": "2410.15578",
+      "version": "v1",
+      "title": "Generalized Probabilistic Attention Mechanism in Transformers",
+      "authors": [
+        "DongNyeong Heo",
+        "Heeyoul Choi"
+      ],
+      "published": "2024-10-21T01:55:52Z",
+      "updated": "2024-10-21T01:55:52Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "summary": "The Transformer architecture has become widely adopted due to its demonstrated success, attributed to the attention mechanism at its core. Despite these successes, the attention mechanism of Transformers is associated with two well-known issues: rank-collapse and gradient vanishing. In this paper, we present a theoretical analysis that it is inherently difficult to address both issues simultaneously in the conventional attention mechanism. To handle these issues, we introduce a novel class of attention mechanism, referred to as generalized probabilistic attention mechanism (GPAM), and its dual-attention implementation within the Transformer architecture. Unlike conventional attention mechanisms, GPAM allows for negative attention scores while preserving a fixed total sum. We provide theoretical evidence that the proposed dual-attention GPAM (daGPAM) effectively mitigates both the rank-collapse and gradient vanishing issues which are difficult to resolve simultaneously with the conventional attention mechanisms. Furthermore, we empirically validate this theoretical evidence, demonstrating the superiority of daGPAM compared to other alternative attention mechanisms that were proposed to address the same issues. Additionally, we demonstrate the practical benefits of GPAM in natural language processing tasks, such as language modeling and neural machine translation.",
+      "filename": "2410.15578.pdf"
+    },
+    {
+      "arxiv_id": "1803.11407",
+      "version": "v2",
+      "title": "Fine-Grained Attention Mechanism for Neural Machine Translation",
+      "authors": [
+        "Heeyoul Choi",
+        "Kyunghyun Cho",
+        "Yoshua Bengio"
+      ],
+      "published": "2018-03-30T10:38:33Z",
+      "updated": "2018-04-03T07:07:32Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "Neural machine translation (NMT) has been a new paradigm in machine translation, and the attention mechanism has become the dominant approach with the state-of-the-art records in many language pairs. While there are variants of the attention mechanism, all of them use only temporal attention where one scalar value is assigned to one context vector corresponding to a source word. In this paper, we propose a fine-grained (or 2D) attention mechanism where each dimension of a context vector will receive a separate attention score. In experiments with the task of En-De and En-Fi translation, the fine-grained attention method improves the translation quality in terms of BLEU score. In addition, our alignment analysis reveals how the fine-grained attention mechanism exploits the internal structure of context vectors.",
+      "filename": "1803.11407.pdf"
+    },
+    {
+      "arxiv_id": "2208.10247",
+      "version": "v1",
+      "title": "Generalized Attention Mechanism and Relative Position for Transformer",
+      "authors": [
+        "R. V. R. Pandya"
+      ],
+      "published": "2022-07-24T00:57:06Z",
+      "updated": "2022-07-24T00:57:06Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "summary": "In this paper, we propose generalized attention mechanism (GAM) by first suggesting a new interpretation for self-attention mechanism of Vaswani et al. . Following the interpretation, we provide description for different variants of attention mechanism which together form GAM. Further, we propose a new relative position representation within the framework of GAM. This representation can be easily utilized for cases in which elements next to each other in input sequence can be at random locations in actual dataset/corpus.",
+      "filename": "2208.10247.pdf"
+    },
+    {
+      "arxiv_id": "1910.13114",
+      "version": "v2",
+      "title": "Contrastive Attention Mechanism for Abstractive Sentence Summarization",
+      "authors": [
+        "Xiangyu Duan",
+        "Hoongfei Yu",
+        "Mingming Yin",
+        "Min Zhang",
+        "Weihua Luo",
+        "Yue Zhang"
+      ],
+      "published": "2019-10-29T06:56:46Z",
+      "updated": "2019-10-30T05:33:27Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "summary": "We propose a contrastive attention mechanism to extend the sequence-to-sequence framework for abstractive sentence summarization task, which aims to generate a brief summary of a given source sentence. The proposed contrastive attention mechanism accommodates two categories of attention: one is the conventional attention that attends to relevant parts of the source sentence, the other is the opponent attention that attends to irrelevant or less relevant parts of the source sentence. Both attentions are trained in an opposite way so that the contribution from the conventional attention is encouraged and the contribution from the opponent attention is discouraged through a novel softmax and softmin functionality. Experiments on benchmark datasets show that, the proposed contrastive attention mechanism is more focused on the relevant parts for the summary than the conventional attention mechanism, and greatly advances the state-of-the-art performance on the abstractive sentence summarization task. We release the code at https://github.com/travel-go/Abstractive-Text-Summarization",
+      "filename": "1910.13114.pdf"
+    },
+    {
+      "arxiv_id": "2204.13353",
+      "version": "v1",
+      "title": "Attention Mechanism with Energy-Friendly Operations",
+      "authors": [
+        "Yu Wan",
+        "Baosong Yang",
+        "Dayiheng Liu",
+        "Rong Xiao",
+        "Derek F. Wong",
+        "Haibo Zhang",
+        "Boxing Chen",
+        "Lidia S. Chao"
+      ],
+      "published": "2022-04-28T08:50:09Z",
+      "updated": "2022-04-28T08:50:09Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "Attention mechanism has become the dominant module in natural language processing models. It is computationally intensive and depends on massive power-hungry multiplications. In this paper, we rethink variants of attention mechanism from the energy consumption aspects. After reaching the conclusion that the energy costs of several energy-friendly operations are far less than their multiplication counterparts, we build a novel attention model by replacing multiplications with either selective operations or additions. Empirical results on three machine translation tasks demonstrate that the proposed model, against the vanilla one, achieves competitable accuracy while saving 99\\% and 66\\% energy during alignment calculation and the whole attention procedure. Code is available at: https://github.com/NLP2CT/E-Att.",
+      "filename": "2204.13353.pdf"
+    },
+    {
+      "arxiv_id": "2411.18583",
+      "version": "v1",
+      "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+      "authors": [
+        "Nurshat Fateh Ali",
+        "Md. Mahdi Mohtasim",
+        "Shakil Mosharrof",
+        "T. Gopi Krishna"
+      ],
+      "published": "2024-11-27T18:27:07Z",
+      "updated": "2024-11-27T18:27:07Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "summary": "This research presents and compares multiple approaches to automate the generation of literature reviews using several Natural Language Processing (NLP) techniques and retrieval-augmented generation (RAG) with a Large Language Model (LLM). The ever-increasing number of research articles provides a huge challenge for manual literature review. It has resulted in an increased demand for automation. Developing a system capable of automatically generating the literature reviews from only the PDF files as input is the primary objective of this research work. The effectiveness of several Natural Language Processing (NLP) strategies, such as the frequency-based method (spaCy), the transformer model (Simple T5), and retrieval-augmented generation (RAG) with Large Language Model (GPT-3.5-turbo), is evaluated to meet the primary objective. The SciTLDR dataset is chosen for this research experiment and three distinct techniques are utilized to implement three different systems for auto-generating the literature reviews. The ROUGE scores are used for the evaluation of all three systems. Based on the evaluation, the Large Language Model GPT-3.5-turbo achieved the highest ROUGE-1 score, 0.364. The transformer model comes in second place and spaCy is at the last position. Finally, a graphical user interface is created for the best system based on the large language model.",
+      "filename": "2411.18583.pdf"
+    },
+    {
+      "arxiv_id": "2502.00306",
+      "version": "v2",
+      "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+      "authors": [
+        "Ali Naseh",
+        "Yuefeng Peng",
+        "Anshuman Suri",
+        "Harsh Chaudhari",
+        "Alina Oprea",
+        "Amir Houmansadr"
+      ],
+      "published": "2025-02-01T04:01:18Z",
+      "updated": "2025-06-30T16:37:59Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "summary": "Retrieval-Augmented Generation (RAG) enables Large Language Models (LLMs) to generate grounded responses by leveraging external knowledge databases without altering model parameters. Although the absence of weight tuning prevents leakage via model parameters, it introduces the risk of inference adversaries exploiting retrieved documents in the model's context. Existing methods for membership inference and data extraction often rely on jailbreaking or carefully crafted unnatural queries, which can be easily detected or thwarted with query rewriting techniques common in RAG systems. In this work, we present Interrogation Attack (IA), a membership inference technique targeting documents in the RAG datastore. By crafting natural-text queries that are answerable only with the target document's presence, our approach demonstrates successful inference with just 30 queries while remaining stealthy; straightforward detectors identify adversarial prompts from existing methods up to ~76x more frequently than those generated by our attack. We observe a 2x improvement in TPR@1%FPR over prior inference attacks across diverse RAG configurations, all while costing less than $0.02 per document inference.",
+      "filename": "2502.00306.pdf"
+    },
+    {
+      "arxiv_id": "2510.22344",
+      "version": "v1",
+      "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+      "authors": [
+        "Mohammad Aghajani Asl",
+        "Majid Asgari-Bidhendi",
+        "Behrooz Minaei-Bidgoli"
+      ],
+      "published": "2025-10-25T15:59:33Z",
+      "updated": "2025-10-25T15:59:33Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "summary": "While Retrieval-Augmented Generation (RAG) mitigates hallucination and knowledge staleness in Large Language Models (LLMs), existing frameworks often falter on complex, multi-hop queries that require synthesizing information from disparate sources. Current advanced RAG methods, employing iterative or adaptive strategies, lack a robust mechanism to systematically identify and fill evidence gaps, often propagating noise or failing to gather a comprehensive context. We introduce FAIR-RAG, a novel agentic framework that transforms the standard RAG pipeline into a dynamic, evidence-driven reasoning process. At its core is an Iterative Refinement Cycle governed by a module we term Structured Evidence Assessment (SEA). The SEA acts as an analytical gating mechanism: it deconstructs the initial query into a checklist of required findings and audits the aggregated evidence to identify confirmed facts and, critically, explicit informational gaps. These gaps provide a precise signal to an Adaptive Query Refinement agent, which generates new, targeted sub-queries to retrieve missing information. This cycle repeats until the evidence is verified as sufficient, ensuring a comprehensive context for a final, strictly faithful generation. We conducted experiments on challenging multi-hop QA benchmarks, including HotpotQA, 2WikiMultiHopQA, and MusiQue. In a unified experimental setup, FAIR-RAG significantly outperforms strong baselines. On HotpotQA, it achieves an F1-score of 0.453 -- an absolute improvement of 8.3 points over the strongest iterative baseline -- establishing a new state-of-the-art for this class of methods on these benchmarks. Our work demonstrates that a structured, evidence-driven refinement process with explicit gap analysis is crucial for unlocking reliable and accurate reasoning in advanced RAG systems for complex, knowledge-intensive tasks.",
+      "filename": "2510.22344.pdf"
+    },
+    {
+      "arxiv_id": "2503.16581",
+      "version": "v1",
+      "title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+      "authors": [
+        "Zahra Khalila",
+        "Arbi Haza Nasution",
+        "Winda Monika",
+        "Aytug Onan",
+        "Yohei Murakami",
+        "Yasir Bin Ismail Radi",
+        "Noor Mohammad Osmani"
+      ],
+      "published": "2025-03-20T13:26:30Z",
+      "updated": "2025-03-20T13:26:30Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "summary": "Accurate and contextually faithful responses are critical when applying large language models (LLMs) to sensitive and domain-specific tasks, such as answering queries related to quranic studies. General-purpose LLMs often struggle with hallucinations, where generated responses deviate from authoritative sources, raising concerns about their reliability in religious contexts. This challenge highlights the need for systems that can integrate domain-specific knowledge while maintaining response accuracy, relevance, and faithfulness. In this study, we investigate 13 open-source LLMs categorized into large (e.g., Llama3:70b, Gemma2:27b, QwQ:32b), medium (e.g., Gemma2:9b, Llama3:8b), and small (e.g., Llama3.2:3b, Phi3:3.8b). A Retrieval-Augmented Generation (RAG) is used to make up for the problems that come with using separate models. This research utilizes a descriptive dataset of Quranic surahs including the meanings, historical context, and qualities of the 114 surahs, allowing the model to gather relevant knowledge before responding. The models are evaluated using three key metrics set by human evaluators: context relevance, answer faithfulness, and answer relevance. The findings reveal that large models consistently outperform smaller models in capturing query semantics and producing accurate, contextually grounded responses. The Llama3.2:3b model, even though it is considered small, does very well on faithfulness (4.619) and relevance (4.857), showing the promise of smaller architectures that have been well optimized. This article examines the trade-offs between model size, computational efficiency, and response quality while using LLMs in domain-specific applications.",
+      "filename": "2503.16581.pdf"
+    },
+    {
+      "arxiv_id": "2502.01113",
+      "version": "v3",
+      "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+      "authors": [
+        "Linhao Luo",
+        "Zicheng Zhao",
+        "Gholamreza Haffari",
+        "Dinh Phung",
+        "Chen Gong",
+        "Shirui Pan"
+      ],
+      "published": "2025-02-03T07:04:29Z",
+      "updated": "2025-12-11T03:45:04Z",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "summary": "Retrieval-augmented generation (RAG) has proven effective in integrating knowledge into large language models (LLMs). However, conventional RAGs struggle to capture complex relationships between pieces of knowledge, limiting their performance in intricate reasoning that requires integrating knowledge from multiple sources. Recently, graph-enhanced retrieval augmented generation (GraphRAG) builds graph structure to explicitly model these relationships, enabling more effective and efficient retrievers. Nevertheless, its performance is still hindered by the noise and incompleteness within the graph structure. To address this, we introduce GFM-RAG, a novel graph foundation model (GFM) for retrieval augmented generation. GFM-RAG is powered by an innovative graph neural network that reasons over graph structure to capture complex query-knowledge relationships. The GFM with 8M parameters undergoes a two-stage training process on large-scale datasets, comprising 60 knowledge graphs with over 14M triples and 700k documents. This results in impressive performance and generalizability for GFM-RAG, making it the first graph foundation model applicable to unseen datasets for retrieval without any fine-tuning required. Extensive experiments on three multi-hop QA datasets and seven domain-specific RAG datasets demonstrate that GFM-RAG achieves state-of-the-art performance while maintaining efficiency and alignment with neural scaling laws, highlighting its potential for further improvement.",
+      "filename": "2502.01113.pdf"
+    },
+    {
+      "arxiv_id": "2607.01852",
+      "version": "v1",
+      "title": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+      "authors": [
+        "Valentin J. J. Kreileder",
+        "Johannes Reisinger",
+        "Andreas Fischer"
+      ],
+      "published": "2026-07-02T08:12:35Z",
+      "updated": "2026-07-02T08:12:35Z",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "summary": "Retrieval-Augmented Generation (RAG) systems use the question-answering capabilities of Large Language Models (LLMs) to access information outside their parameters. We evaluate if cluster-based semantic chunking improves retrieval and answer quality compared to fixed-size and recursive chunking evaluating on long, structured academic theses using the Retrieval Augmented Generation Assessment (RAGAs) framework. RAGAs based faithfulness shows limited reliability in this setup. Performance on fixed versus document specific questions varied substantially, likely related to the formatting of documents and preprocessing. Under the tested configuration, cluster-based chunking did not outperform simpler strategies.",
+      "filename": "2607.01852.pdf"
+    },
+    {
+      "arxiv_id": "2312.10793",
+      "version": "v3",
+      "title": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+      "authors": [
+        "Renxi Wang",
+        "Haonan Li",
+        "Minghao Wu",
+        "Yuxia Wang",
+        "Xudong Han",
+        "Chiyu Zhang",
+        "Timothy Baldwin"
+      ],
+      "published": "2023-12-17T18:44:26Z",
+      "updated": "2024-02-18T17:13:36Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "summary": "Instruction tuning significantly enhances the performance of large language models (LLMs) across various tasks. However, the procedure to optimizing the mixing of instruction datasets for LLM fine-tuning is still poorly understood. This study categorizes instructions into three primary types: NLP downstream tasks, coding, and general chat. We explore the effects of instruction tuning on different combinations of datasets on LLM performance, and find that certain instruction types are more advantageous for specific applications but can negatively impact other areas. This work provides insights into instruction mixtures, laying the foundations for future research.",
+      "filename": "2312.10793.pdf"
+    },
+    {
+      "arxiv_id": "2304.12244",
+      "version": "v3",
+      "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "authors": [
+        "Can Xu",
+        "Qingfeng Sun",
+        "Kai Zheng",
+        "Xiubo Geng",
+        "Pu Zhao",
+        "Jiazhan Feng",
+        "Chongyang Tao",
+        "Qingwei Lin",
+        "Daxin Jiang"
+      ],
+      "published": "2023-04-24T16:31:06Z",
+      "updated": "2025-05-27T06:49:09Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "summary": "Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM. Human evaluations on a complexity-balanced test bed and Vicuna's testset show that instructions from Evol-Instruct are superior to human-created ones. By analyzing the human evaluation results of the high complexity part, we demonstrate that outputs from our WizardLM are preferred to outputs from OpenAI ChatGPT. In GPT-4 automatic evaluation, WizardLM achieves more than 90\\% capacity of ChatGPT on 17 out of 29 skills. Even though WizardLM still lags behind ChatGPT in some aspects, our findings suggest that fine-tuning with AI-evolved instructions is a promising direction for enhancing LLMs. Our code and data are public at https://github.com/nlpxucan/WizardLM",
+      "filename": "2304.12244.pdf"
+    },
+    {
+      "arxiv_id": "1312.3005",
+      "version": "v3",
+      "title": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling",
+      "authors": [
+        "Ciprian Chelba",
+        "Tomas Mikolov",
+        "Mike Schuster",
+        "Qi Ge",
+        "Thorsten Brants",
+        "Phillipp Koehn",
+        "Tony Robinson"
+      ],
+      "published": "2013-12-11T00:25:57Z",
+      "updated": "2014-03-04T18:30:26Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "We propose a new benchmark corpus to be used for measuring progress in statistical language modeling. With almost one billion words of training data, we hope this benchmark will be useful to quickly evaluate novel language modeling techniques, and to compare their contribution when combined with other advanced techniques. We show performance of several well-known types of language models, with the best results achieved with a recurrent neural network based language model. The baseline unpruned Kneser-Ney 5-gram model achieves perplexity 67.6; a combination of techniques leads to 35% reduction in perplexity, or 10% reduction in cross-entropy (bits), over that baseline. The benchmark is available as a code.google.com project; besides the scripts needed to rebuild the training/held-out data, it also makes available log-probability values for each word in each of ten held-out data sets, for each of the baseline n-gram models.",
+      "filename": "1312.3005.pdf"
+    },
+    {
+      "arxiv_id": "2402.11651",
+      "version": "v2",
+      "title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+      "authors": [
+        "Renxi Wang",
+        "Haonan Li",
+        "Xudong Han",
+        "Yixuan Zhang",
+        "Timothy Baldwin"
+      ],
+      "published": "2024-02-18T17:10:07Z",
+      "updated": "2024-04-16T11:41:13Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "Large language models (LLMs) have achieved success in acting as agents, which interact with environments through tools such as search engines. However, LLMs are optimized for language generation instead of tool use during training or alignment, limiting their effectiveness as agents. To resolve this problem, previous work has first collected interaction trajectories between LLMs and environments, using only trajectories that successfully finished the task to fine-tune smaller models, making fine-tuning data scarce and acquiring it both difficult and costly. Discarding failed trajectories also leads to significant wastage of data and resources and limits the possible optimization paths during fine-tuning. In this paper, we argue that unsuccessful trajectories offer valuable insights, and LLMs can learn from these trajectories through appropriate quality control and fine-tuning strategies. By simply adding a prefix or suffix that tells the model whether to generate a successful trajectory during training, we improve model performance by a large margin on mathematical reasoning, multi-hop question answering, and strategic question answering tasks. We further analyze the inference results and find that our method provides a better trade-off between valuable information and errors in unsuccessful trajectories. To our knowledge, we are the first to demonstrate the value of negative trajectories and their application in agent-tunning scenarios. Our findings offer guidance for developing better agent-tuning methods and low-resource data usage techniques.",
+      "filename": "2402.11651.pdf"
+    },
+    {
+      "arxiv_id": "2310.00034",
+      "version": "v2",
+      "title": "PB-LLM: Partially Binarized Large Language Models",
+      "authors": [
+        "Yuzhang Shang",
+        "Zhihang Yuan",
+        "Qiang Wu",
+        "Zhen Dong"
+      ],
+      "published": "2023-09-29T14:35:27Z",
+      "updated": "2023-11-07T20:41:22Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "summary": "This paper explores network binarization, a radical form of quantization, compressing model weights to a single bit, specifically for Large Language Models (LLMs) compression. Due to previous binarization methods collapsing LLMs, we propose a novel approach, Partially-Binarized LLM (PB-LLM), which can achieve extreme low-bit quantization while maintaining the linguistic reasoning capacity of quantized LLMs. Specifically, our exploration first uncovers the ineffectiveness of naive applications of existing binarization algorithms and highlights the imperative role of salient weights in achieving low-bit quantization. Thus, PB-LLM filters a small ratio of salient weights during binarization, allocating them to higher-bit storage, i.e., partially-binarization. PB-LLM is extended to recover the capacities of quantized LMMs, by analyzing from the perspective of post-training quantization (PTQ) and quantization-aware training (QAT). Under PTQ, combining the concepts from GPTQ, we reconstruct the binarized weight matrix guided by the Hessian matrix and successfully recover the reasoning capacity of PB-LLM in low-bit. Under QAT, we freeze the salient weights during training, explore the derivation of optimal scaling factors crucial for minimizing the quantization error, and propose a scaling mechanism based on this derived scaling strategy for residual binarized weights. Those explorations and the developed methodologies significantly contribute to rejuvenating the performance of low-bit quantized LLMs and present substantial advancements in the field of network binarization for LLMs.The code is available at https://github.com/hahnyuan/BinaryLLM.",
+      "filename": "2310.00034.pdf"
+    },
+    {
+      "arxiv_id": "2407.12036",
+      "version": "v2",
+      "title": "Exploring Advanced Large Language Models with LLMsuite",
+      "authors": [
+        "Giorgio Roffo"
+      ],
+      "published": "2024-07-01T05:37:17Z",
+      "updated": "2024-11-12T10:12:49Z",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "summary": "This tutorial explores the advancements and challenges in the development of Large Language Models (LLMs) such as ChatGPT and Gemini. It addresses inherent limitations like temporal knowledge cutoffs, mathematical inaccuracies, and the generation of incorrect information, proposing solutions like Retrieval Augmented Generation (RAG), Program-Aided Language Models (PAL), and frameworks such as ReAct and LangChain. The integration of these techniques enhances LLM performance and reliability, especially in multi-step reasoning and complex task execution. The paper also covers fine-tuning strategies, including instruction fine-tuning, parameter-efficient methods like LoRA, and Reinforcement Learning from Human Feedback (RLHF) as well as Reinforced Self-Training (ReST). Additionally, it provides a comprehensive survey of transformer architectures and training techniques for LLMs. The source code can be accessed by contacting the author via email for a request.",
+      "filename": "2407.12036.pdf"
+    },
+    {
+      "arxiv_id": "1912.02145",
+      "version": "v1",
+      "title": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+      "authors": [
+        "Shayne Longpre",
+        "Yi Lu",
+        "Zhucheng Tu",
+        "Chris DuBois"
+      ],
+      "published": "2019-12-04T17:48:58Z",
+      "updated": "2019-12-04T17:48:58Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "To produce a domain-agnostic question answering model for the Machine Reading Question Answering (MRQA) 2019 Shared Task, we investigate the relative benefits of large pre-trained language models, various data sampling strategies, as well as query and context paraphrases generated by back-translation. We find a simple negative sampling technique to be particularly effective, even though it is typically used for datasets that include unanswerable questions, such as SQuAD 2.0. When applied in conjunction with per-domain sampling, our XLNet (Yang et al., 2019)-based submission achieved the second best Exact Match and F1 in the MRQA leaderboard competition.",
+      "filename": "1912.02145.pdf"
+    },
+    {
+      "arxiv_id": "1803.07724",
+      "version": "v1",
+      "title": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+      "authors": [
+        "Jasdeep Singh",
+        "Vincent Ying",
+        "Alex Nutkiewicz"
+      ],
+      "published": "2018-03-21T03:05:58Z",
+      "updated": "2018-03-21T03:05:58Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "summary": "Visual Question Answering (VQA) is an increasingly popular topic in deep learning research, requiring coordination of natural language processing and computer vision modules into a single architecture. We build upon the model which placed first in the VQA Challenge by developing thirteen new attention mechanisms and introducing a simplified classifier. We performed 300 GPU hours of extensive hyperparameter and architecture searches and were able to achieve an evaluation score of 64.78%, outperforming the existing state-of-the-art single model's validation score of 63.15%.",
+      "filename": "1803.07724.pdf"
+    },
+    {
+      "arxiv_id": "1909.09192",
+      "version": "v1",
+      "title": "Learning Sparse Mixture of Experts for Visual Question Answering",
+      "authors": [
+        "Vardaan Pahuja",
+        "Jie Fu",
+        "Christopher J. Pal"
+      ],
+      "published": "2019-09-19T18:55:54Z",
+      "updated": "2019-09-19T18:55:54Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "summary": "There has been a rapid progress in the task of Visual Question Answering with improved model architectures. Unfortunately, these models are usually computationally intensive due to their sheer size which poses a serious challenge for deployment. We aim to tackle this issue for the specific task of Visual Question Answering (VQA). A Convolutional Neural Network (CNN) is an integral part of the visual processing pipeline of a VQA model (assuming the CNN is trained along with entire VQA model). In this project, we propose an efficient and modular neural architecture for the VQA task with focus on the CNN module. Our experiments demonstrate that a sparsely activated CNN based VQA model achieves comparable performance to a standard CNN based VQA model architecture.",
+      "filename": "1909.09192.pdf"
+    },
+    {
+      "arxiv_id": "1911.11403",
+      "version": "v1",
+      "title": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+      "authors": [
+        "Preslav Nakov",
+        "Lluís Màrquez",
+        "Walid Magdy",
+        "Alessandro Moschitti",
+        "James Glass",
+        "Bilal Randeree"
+      ],
+      "published": "2019-11-26T08:40:49Z",
+      "updated": "2019-11-26T08:40:49Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "summary": "Community Question Answering (cQA) provides new interesting research directions to the traditional Question Answering (QA) field, e.g., the exploitation of the interaction between users and the structure of related posts. In this context, we organized SemEval-2015 Task 3 on \"Answer Selection in cQA\", which included two subtasks: (a) classifying answers as \"good\", \"bad\", or \"potentially relevant\" with respect to the question, and (b) answering a YES/NO question with \"yes\", \"no\", or \"unsure\", based on the list of all answers. We set subtask A for Arabic and English on two relatively different cQA domains, i.e., the Qatar Living website for English, and a Quran-related website for Arabic. We used crowdsourcing on Amazon Mechanical Turk to label a large English training dataset, which we released to the research community. Thirteen teams participated in the challenge with a total of 61 submissions: 24 primary and 37 contrastive. The best systems achieved an official score (macro-averaged F1) of 57.19 and 63.7 for the English subtasks A and B, and 78.55 for the Arabic subtask A.",
+      "filename": "1911.11403.pdf"
+    },
+    {
+      "arxiv_id": "cs/0107006",
+      "version": "v1",
+      "title": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+      "authors": [
+        "Eric Breck",
+        "Marc Light",
+        "Gideon S. Mann",
+        "Ellen Riloff",
+        "Brianne Brown Pranav Anand",
+        "Mats Rooth",
+        "Michael Thelen"
+      ],
+      "published": "2001-07-03T18:06:05Z",
+      "updated": "2001-07-03T18:06:05Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "summary": "In this paper we analyze two question answering tasks : the TREC-8 question answering task and a set of reading comprehension exams. First, we show that Q/A systems perform better when there are multiple answer opportunities per question. Next, we analyze common approaches to two subproblems: term overlap for answer sentence identification, and answer typing for short answer extraction. We present general tools for analyzing the strengths and limitations of techniques for these subproblems. Our results quantify the limitations of both term overlap and answer typing to distinguish between competing answer candidates.",
+      "filename": "cs_0107006.pdf"
+    },
+    {
+      "arxiv_id": "1912.02998",
+      "version": "v1",
+      "title": "Machine Translation Evaluation Meets Community Question Answering",
+      "authors": [
+        "Francisco Guzmán",
+        "Lluís Màrquez",
+        "Preslav Nakov"
+      ],
+      "published": "2019-12-06T06:35:21Z",
+      "updated": "2019-12-06T06:35:21Z",
+      "categories": [
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "summary": "We explore the applicability of machine translation evaluation (MTE) methods to a very different problem: answer ranking in community Question Answering. In particular, we adopt a pairwise neural network (NN) architecture, which incorporates MTE features, as well as rich syntactic and semantic embeddings, and which efficiently models complex non-linear interactions. The evaluation results show state-of-the-art performance, with sizeable contribution from both the MTE features and from the pairwise NN architecture.",
+      "filename": "1912.02998.pdf"
+    },
+    {
+      "arxiv_id": "2602.00899",
+      "version": "v1",
+      "title": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+      "authors": [
+        "Mritunjay Pandey"
+      ],
+      "published": "2026-01-31T20:58:23Z",
+      "updated": "2026-01-31T20:58:23Z",
+      "categories": [
+        "cs.LG",
+        "cs.IR"
+      ],
+      "summary": "E-commerce recommendation and search commonly rely on sparse keyword matching (e.g., BM25), which breaks down under vocabulary mismatch when user intent has limited lexical overlap with product metadata. We cast content-based recommendation as recommendation-as-retrieval: given a natural-language intent signal (a query or review), retrieve the top-K most relevant items from a large catalog via semantic similarity. We present a scalable dense retrieval system based on a two-tower bi-encoder, fine-tuned on the Amazon Reviews 2023 (Fashion) subset using supervised contrastive learning with Multiple Negatives Ranking Loss. We construct training pairs from review text (as a query proxy) and item metadata (as the positive document) and fine-tune on 50,000 sampled interactions with a maximum sequence length of 500 tokens. For efficient serving, we combine FAISS HNSW indexing with an ONNX Runtime inference pipeline using INT8 dynamic quantization. On a review-to-title benchmark over 826,402 catalog items, our approach improves Recall@10 from 0.26 (BM25) to 0.66, while meeting practical latency and model-size constraints: 6.1 ms median CPU inference latency (batch size 1) and a 4x reduction in model size. Overall, we provide an end-to-end, reproducible blueprint for taking domain-adapted dense retrieval from offline training to CPU-efficient serving at catalog scale.",
+      "filename": "2602.00899.pdf"
+    },
+    {
+      "arxiv_id": "2307.16779",
+      "version": "v1",
+      "title": "Lexically-Accelerated Dense Retrieval",
+      "authors": [
+        "Hrishikesh Kulkarni",
+        "Sean MacAvaney",
+        "Nazli Goharian",
+        "Ophir Frieder"
+      ],
+      "published": "2023-07-31T15:44:26Z",
+      "updated": "2023-07-31T15:44:26Z",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "summary": "Retrieval approaches that score documents based on learned dense vectors (i.e., dense retrieval) rather than lexical signals (i.e., conventional retrieval) are increasingly popular. Their ability to identify related documents that do not necessarily contain the same terms as those appearing in the user's query (thereby improving recall) is one of their key advantages. However, to actually achieve these gains, dense retrieval approaches typically require an exhaustive search over the document collection, making them considerably more expensive at query-time than conventional lexical approaches. Several techniques aim to reduce this computational overhead by approximating the results of a full dense retriever. Although these approaches reasonably approximate the top results, they suffer in terms of recall -- one of the key advantages of dense retrieval. We introduce 'LADR' (Lexically-Accelerated Dense Retrieval), a simple-yet-effective approach that improves the efficiency of existing dense retrieval models without compromising on retrieval effectiveness. LADR uses lexical retrieval techniques to seed a dense retrieval exploration that uses a document proximity graph. We explore two variants of LADR: a proactive approach that expands the search space to the neighbors of all seed documents, and an adaptive approach that selectively searches the documents with the highest estimated relevance in an iterative fashion. Through extensive experiments across a variety of dense retrieval models, we find that LADR establishes a new dense retrieval effectiveness-efficiency Pareto frontier among approximate k nearest neighbor techniques. Further, we find that when tuned to take around 8ms per query in retrieval latency on our hardware, LADR consistently achieves both precision and recall that are on par with an exhaustive search on standard benchmarks.",
+      "filename": "2307.16779.pdf"
+    },
+    {
+      "arxiv_id": "2403.18684",
+      "version": "v2",
+      "title": "Scaling Laws For Dense Retrieval",
+      "authors": [
+        "Yan Fang",
+        "Jingtao Zhan",
+        "Qingyao Ai",
+        "Jiaxin Mao",
+        "Weihang Su",
+        "Jia Chen",
+        "Yiqun Liu"
+      ],
+      "published": "2024-03-27T15:27:36Z",
+      "updated": "2024-07-15T14:48:09Z",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "summary": "Scaling up neural models has yielded significant advancements in a wide array of tasks, particularly in language generation. Previous studies have found that the performance of neural models frequently adheres to predictable scaling laws, correlated with factors such as training set size and model size. This insight is invaluable, especially as large-scale experiments grow increasingly resource-intensive. Yet, such scaling law has not been fully explored in dense retrieval due to the discrete nature of retrieval metrics and complex relationships between training data and model sizes in retrieval tasks. In this study, we investigate whether the performance of dense retrieval models follows the scaling law as other neural models. We propose to use contrastive log-likelihood as the evaluation metric and conduct extensive experiments with dense retrieval models implemented with different numbers of parameters and trained with different amounts of annotated data. Results indicate that, under our settings, the performance of dense retrieval models follows a precise power-law scaling related to the model size and the number of annotations. Additionally, we examine scaling with prevalent data augmentation methods to assess the impact of annotation quality, and apply the scaling law to find the best resource allocation strategy under a budget constraint. We believe that these insights will significantly contribute to understanding the scaling effect of dense retrieval models and offer meaningful guidance for future research endeavors.",
+      "filename": "2403.18684.pdf"
+    },
+    {
+      "arxiv_id": "2306.11397",
+      "version": "v1",
+      "title": "Generative Retrieval as Dense Retrieval",
+      "authors": [
+        "Thong Nguyen",
+        "Andrew Yates"
+      ],
+      "published": "2023-06-20T09:04:06Z",
+      "updated": "2023-06-20T09:04:06Z",
+      "categories": [
+        "cs.IR"
+      ],
+      "summary": "Generative retrieval is a promising new neural retrieval paradigm that aims to optimize the retrieval pipeline by performing both indexing and retrieval with a single transformer model. However, this new paradigm faces challenges with updating the index and scaling to large collections. In this paper, we analyze two prominent variants of generative retrieval and show that they can be conceptually viewed as bi-encoders for dense retrieval. Specifically, we analytically demonstrate that the generative retrieval process can be decomposed into dot products between query and document vectors, similar to dense retrieval. This analysis leads us to propose a new variant of generative retrieval, called Tied-Atomic, which addresses the updating and scaling issues by incorporating techniques from dense retrieval. In experiments on two datasets, NQ320k and the full MSMARCO, we confirm that this approach does not reduce retrieval effectiveness while enabling the model to scale to large collections.",
+      "filename": "2306.11397.pdf"
+    },
+    {
+      "arxiv_id": "2403.08970",
+      "version": "v1",
+      "title": "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling",
+      "authors": [
+        "Minghan Li",
+        "Eric Gaussier"
+      ],
+      "published": "2024-03-13T21:30:01Z",
+      "updated": "2024-03-13T21:30:01Z",
+      "categories": [
+        "cs.IR"
+      ],
+      "summary": "Recent studies have demonstrated that the ability of dense retrieval models to generalize to target domains with different distributions is limited, which contrasts with the results obtained with interaction-based models. Prior attempts to mitigate this challenge involved leveraging adversarial learning and query generation approaches, but both approaches nevertheless resulted in limited improvements. In this paper, we propose to combine the query-generation approach with a self-supervision approach in which pseudo-relevance labels are automatically generated on the target domain. To accomplish this, a T5-3B model is utilized for pseudo-positive labeling, and meticulous hard negatives are chosen. We also apply this strategy on conversational dense retrieval model for conversational search. A similar pseudo-labeling approach is used, but with the addition of a query-rewriting module to rewrite conversational queries for subsequent labeling. This proposed approach enables a model's domain adaptation with real queries and documents from the target dataset. Experiments on standard dense retrieval and conversational dense retrieval models both demonstrate improvements on baseline models when they are fine-tuned on the pseudo-relevance labeled data.",
+      "filename": "2403.08970.pdf"
+    },
+    {
+      "arxiv_id": "2503.07519",
+      "version": "v2",
+      "title": "GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval",
+      "authors": [
+        "Justus-Jonas Erker",
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "published": "2025-03-10T16:42:48Z",
+      "updated": "2026-01-22T18:12:25Z",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "summary": "Decomposition-based multi-hop retrieval methods rely on many autoregressive steps to break down complex queries, which breaks end-to-end differentiability and is computationally expensive. Decomposition-free methods tackle this, but current decomposition-free approaches struggle with longer multi-hop problems and generalization to out-of-distribution data. To address these challenges, we introduce GRITHopper-7B, a novel multi-hop dense retrieval model that achieves state-of-the-art performance on both in-distribution and out-of-distribution benchmarks. GRITHopper combines generative and representational instruction tuning by integrating causal language modeling with dense retrieval training. Through controlled studies, we find that incorporating additional context after the retrieval process, referred to as post-retrieval language modeling, enhances dense retrieval performance. By including elements such as final answers during training, the model learns to better contextualize and retrieve relevant information. GRITHopper-7B offers a robust, scalable, and generalizable solution for multi-hop dense retrieval, and we release it to the community for future research and applications requiring multi-hop reasoning and retrieval capabilities.",
+      "filename": "2503.07519.pdf"
+    }
+  ]
+}
