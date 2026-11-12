@@ -1,5 +1,6 @@
 # ForgeHold Scholar
 
+![tests](https://github.com/ForgeHoldTech/scholar/actions/workflows/tests.yml/badge.svg)
 A retrieval-augmented question answering system over a private collection of research papers. It reads arXiv PDFs, repairs the text that PDF extraction damages, retrieves passages with hybrid search and reranking, and writes answers in which every claim carries a citation to a paper, section and page. An agent mode adds SQL over the paper catalog and a calculator.
 
 Every design choice in this repository is backed by a measurement, and the measurements are reported with their limits.
